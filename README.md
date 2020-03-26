@@ -100,10 +100,10 @@ pip install pandas numpy scipy
 
 ### Installation
 
-1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona19)
+1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 2. Clone the repo
 ```sh
-git clone https://github.com/cmpaulo/corona19.git
+git clone https://github.com/cmpaulo/corona.git
 ```
 <!--// 3. Install NPM packages
 // ```sh
@@ -129,7 +129,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 <!-- 
-See the [open issues](https://github.com/cmpaulo/corona19) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/cmpaulo/corona) for a list of proposed features (and known issues).
 -->
 
 <!-- CONTRIBUTING -->
@@ -157,7 +157,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@cmp0484](https://twitter.com/cmp0484)
 
-Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona19)
+Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 
 
 
@@ -183,7 +183,7 @@ Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/cor
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 <!-- 
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/cmpaulo/corona19/graphs/contributors
+[contributors-url]: https://github.com/cmpaulo//graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
 [forks-url]: https://github.com/cmpaulo/corona19/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
