@@ -20,8 +20,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/cmpaulo/corona19">
-    <img src="logo.png" alt="Logo" width="90" height="90">
+  <a href="https://github.com/cmpaulo/corona">
+    <img src="logo.png" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center">CORONA COVID 19 BRAZIL</h3>
@@ -29,14 +29,14 @@
   <p align="center">
     An awesome analysis of CORONA COVID 19!
     <br/>
-    <a href="https://github.com/cmpaulo/corona19"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/cmpaulo/corona19">View Demo</a>
+    <a href="https://github.com/cmpaulo/corona">View Demo</a>
     ·
-    <a href="https://github.com/cmpaulo/corona19">Report Bug</a>
+    <a href="https://github.com/cmpaulo/corona">Report Bug</a>
     ·
-    <a href="https://github.com/cmpaulo/corona19">Request Feature</a>
+    <a href="https://github.com/cmpaulo/corona">Request Feature</a>
   </p>
 </p>
 
@@ -100,7 +100,7 @@ pip install pandas numpy scipy
 
 ### Installation
 
-1. Get a free API Key at [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/corona19)
+1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona19)
 2. Clone the repo
 ```sh
 git clone https://github.com/cmpaulo/corona19.git
@@ -157,12 +157,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@cmp0484](https://twitter.com/cmp0484)
 
-Project Link: [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/corona19)
+Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona19)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
+<!--## Acknowledgements
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Choose an Open Source License](https://choosealicense.com)
@@ -174,7 +174,7 @@ Project Link: [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/c
 * [Sticky Kit](http://leafo.net/sticky-kit)
 * [JVectorMap](http://jvectormap.com)
 * [Font Awesome](https://fontawesome.com)
-
+-->
 
 
 
