@@ -20,23 +20,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/cmpaulo/corona">
-    <img src="logo.png" alt="Logo" width="150" height="150">
+  <a href="https://github.com/cmpaulo/corona19">
+    <img src="logo.png" alt="Logo" width="120" height="120">
   </a>
 
   <h3 align="center">CORONA COVID 19 BRAZIL</h3>
 
   <p align="center">
-    An awesome analysis of CORONA COVID 19!
+    An awesome analysis of CORONA COVID 19! MODELO PREDIÇÃO CORONA VÍRUS QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
     <br/>
-    <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cmpaulo/corona19"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/cmpaulo/corona">View Demo</a>
+    <a href="https://github.com/cmpaulo/corona19">View Demo</a>
     ·
-    <a href="https://github.com/cmpaulo/corona">Report Bug</a>
+    <a href="https://github.com/cmpaulo/corona19">Report Bug</a>
     ·
-    <a href="https://github.com/cmpaulo/corona">Request Feature</a>
+    <a href="https://github.com/cmpaulo/corona19">Request Feature</a>
   </p>
 </p>
 
@@ -46,13 +46,11 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
 * [Usage](#usage)
 * [Roadmap](#roadmap)
-* [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
 * [Acknowledgements](#acknowledgements)
@@ -74,13 +72,7 @@ Here's why:
 Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.-->
-<!--  
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
--->
+
 
 
 <!-- GETTING STARTED -->
@@ -95,12 +87,12 @@ To get a local copy up and running follow these simple example steps.
 The list of things that you need to use the software and how to install them.
 * pip
 ```sh
-pip install pandas numpy scipy
+pip install pandas numpy scipy wget
 ```
 
 ### Installation
 
-1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+1. Get a free API Key at [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/corona)
 2. Clone the repo
 ```sh
 git clone https://github.com/cmpaulo/corona.git
@@ -121,27 +113,17 @@ git clone https://github.com/cmpaulo/corona.git
 ## Usage
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+<img src="tx_mort.png" alt="Logo" width="90" height="90">
+
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+<img src="modelosir.png" alt="Logo" width="90" height="90">
 <!--
 _For more examples, please refer to the [Documentation](https://example.com)_
 -->
 
-
-<!-- ROADMAP -->
-## Roadmap
-<!-- 
-See the [open issues](https://github.com/cmpaulo/corona) for a list of proposed features (and known issues).
--->
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 
 
@@ -157,44 +139,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@cmp0484](https://twitter.com/cmp0484)
 
-Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+Project Link: [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/corona19)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
-<!--## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
+## Acknowledgements
 * [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
--->
 
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-<!-- 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
-[contributors-url]: https://github.com/cmpaulo//graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=flat-square
-[forks-url]: https://github.com/cmpaulo/corona19/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=flat-square
-[stars-url]: https://github.com/cmpaulo/corona19/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
-[issues-url]: https://github.com/cmpaulo/corona19/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/cmpaulo/corona19/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 -->
 [linkedin-url]: https://br.linkedin.com/in/claudio-machado-paulo
-<!--[product-screenshot]: images/screenshot.png-->
-# CORONA-COVID19
-# CORONA-COVID19
+
+# CORONA COVID19 BRAZIL
+MODELO PREDIÇÃO CORONA VÍRUS QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
+MODELO SIR/SIRE BRASIL 2019
