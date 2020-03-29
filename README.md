@@ -114,12 +114,12 @@ git clone https://github.com/cmpaulo/corona.git
 
 ABOUT TAXS IN BRASIL
 
-<img src="tx_mort.png" alt="Logo" width="300" height="450">
+<img src="tx_mort.png" alt="Logo" width="300" height="500">
 
 
 ABOUT SIR MODEL
 
-<img src="modelosir.png" alt="Logo" width="300" height="450">
+<img src="modelosir.png" alt="Logo" width="300" height="500">
 <!--
 _For more examples, please refer to the [Documentation](https://example.com)_
 -->
