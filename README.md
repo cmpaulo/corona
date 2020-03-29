@@ -32,7 +32,7 @@
     <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/cmpaulo/corona">View Demo</a>
+    [Graphics](#usage)
     ·
     <a href="https://github.com/cmpaulo/corona">Report Bug</a>
     ·
