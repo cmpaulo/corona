@@ -112,14 +112,14 @@ git clone https://github.com/cmpaulo/corona.git
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+ABOUT TAXS IN BRASIL
 
-<img src="tx_mort.png" alt="Logo" width="90" height="90">
+<img src="tx_mort.png" alt="Logo" width="250" height="250">
 
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+ABOUT SIR MODEL
 
-<img src="modelosir.png" alt="Logo" width="90" height="90">
+<img src="modelosir.png" alt="Logo" width="250" height="250">
 <!--
 _For more examples, please refer to the [Documentation](https://example.com)_
 -->
