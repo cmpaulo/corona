@@ -20,7 +20,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/cmpaulo/corona19">
+  <a href="https://github.com/cmpaulo/corona">
     <img src="logo.png" alt="Logo" width="120" height="120">
   </a>
 
@@ -29,14 +29,14 @@
   <p align="center">
     An awesome analysis of CORONA COVID 19! MODELO PREDIÇÃO CORONA VÍRUS QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
     <br/>
-    <a href="https://github.com/cmpaulo/corona19"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/cmpaulo/corona19">View Demo</a>
+    <a href="https://github.com/cmpaulo/corona">View Demo</a>
     ·
-    <a href="https://github.com/cmpaulo/corona19">Report Bug</a>
+    <a href="https://github.com/cmpaulo/corona">Report Bug</a>
     ·
-    <a href="https://github.com/cmpaulo/corona19">Request Feature</a>
+    <a href="https://github.com/cmpaulo/corona">Request Feature</a>
   </p>
 </p>
 
@@ -139,7 +139,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@cmp0484](https://twitter.com/cmp0484)
 
-Project Link: [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/corona19)
+Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 
 
 
