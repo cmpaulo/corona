@@ -28,13 +28,11 @@
   <p align="center">
     An awesome analysis of CORONA COVID 19! <br/>MODELO PREDIÇÃO CORONA VÍRUS 2019 <br/> QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
     <br/>
-    <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    ·
-    <a href="https://github.com/cmpaulo/corona">Report Bug</a>
-    ·
-    <a href="https://github.com/cmpaulo/corona">Request Feature</a>
+  <br/>
+    · <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
+    · <a href="https://github.com/cmpaulo/corona">Report Bug</a>
+    · <a href="https://cmpaulo.github.io/corona/"> GitPages - site corona </a>
+    · <a href="https://github.com/cmpaulo/corona">Request Feature</a>
   </p>
 </p>
 
