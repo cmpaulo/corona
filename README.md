@@ -26,7 +26,7 @@
   <h3 align="center">CORONA COVID 19 BRAZIL</h3>
 
   <p align="center">
-    An awesome analysis of CORONA COVID 19! MODELO PREDIÇÃO CORONA VÍRUS QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
+    An awesome analysis of CORONA COVID 19! <br/>MODELO PREDIÇÃO CORONA VÍRUS QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
     <br/>
     <a href="https://github.com/cmpaulo/corona"><strong>Explore the docs »</strong></a>
     <br/>
