@@ -66,11 +66,7 @@ Observing the worldwide tendency to ignore some diseases that can become a pande
 Here's why:
 * Your time should be focused on creating something amazing. A project that solves a problem and helps others
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.-->
+* You should element DRY principles to the rest of your life :smile: Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.A list of commonly used resources that I find helpful are listed in the acknowledgements.-->
 
 
 
@@ -91,7 +87,7 @@ pip install pandas numpy scipy wget
 
 ### Installation
 
-1. Get a free API Key at [https://github.com/cmpaulo/corona19](https://github.com/cmpaulo/corona)
+1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 2. Clone the repo
 ```sh
 git clone https://github.com/cmpaulo/corona.git
@@ -147,8 +143,9 @@ Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/cor
 * [GitHub Pages](https://pages.github.com)
 
 -->
-[linkedin-url]: https://br.linkedin.com/in/claudio-machado-paulo
+[linkedin-url]: (https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
 
 # CORONA COVID19 BRAZIL
-MODELO PREDIÇÃO CORONA VÍRUS QUARENTENA PARA O ESTADO DE SÃO PAULO, BRASIL
-MODELO SIR/SIRE BRASIL 2019
+MODELO Previsão corona19, covid19, covid 19,
+MODELO PREDIÇÃO CORONA VÍRUS, QUARENTENA, ESTADO DE SÃO PAULO, BRASIL
+MODELO SIR, MODELO SIRE,BRASIL 2019
