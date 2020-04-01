@@ -142,8 +142,7 @@ Project Link: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/cor
 ## Acknowledgements
 * [GitHub Pages](https://pages.github.com)
 
--->
-[linkedin-url]: (https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
+* [linkedin-url]: (https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
 
 # CORONA COVID19 BRAZIL
 MODELO Previsão corona19, covid19, covid 19,
