@@ -81,8 +81,10 @@ ABOUT TAXS IN BRASIL
 <img src="txa_letalidade.png" alt="taxamortalidade">
 
 Lethality rate by region of Brazil
-<img src="txa_letalidade.png" alt="taxamortalidade">
-<img src="txa_letalidade.png" alt="taxamortalidade">
+Region Southeast:
+<img src="letalidade_sudeste.png" alt="taxamortalidade">
+Region South:
+<img src="letalidade_sul.png" alt="taxamortalidade">
 
 ABOUT SIR MODEL
 
