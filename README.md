@@ -8,15 +8,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-<!--
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
--->
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -90,6 +81,7 @@ ABOUT TAXS IN BRASIL
 <img src="tx_mort.png" alt="taxamortalidade">
 
 ABOUT SIR MODEL
+
 The SIR model is a simple mathematical model of epidemics. An epidemic is when the number of people infected with a disease is increasing in a population. S, I, and R.
 This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.
 
@@ -101,12 +93,12 @@ This model is also missing some elements, such as the creation of new susceptibl
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT - email@example.com --->
 ## Contact
 Cláudio M Paulo - [@cmp0484](https://twitter.com/cmp0484)
+
 Project corona: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+
 [LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
 [Currículo Lattes](http://lattes.cnpq.br/4172070751691684)
 
