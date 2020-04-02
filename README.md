@@ -78,13 +78,17 @@ git clone https://github.com/cmpaulo/corona.git
 
 ABOUT TAXS IN BRASIL
 
-<img src="tx_mort.png" alt="taxamortalidade">
+<img src="txa_letalidade.png" alt="taxamortalidade">
+
+Lethality rate by region of Brazil
+<img src="txa_letalidade.png" alt="taxamortalidade">
+<img src="txa_letalidade.png" alt="taxamortalidade">
 
 ABOUT SIR MODEL
 
 The SIR model is a simple mathematical model of epidemics. An epidemic is when the number of people infected with a disease is increasing in a population. S, I, and R.
 This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.
-
+The SIR model by region of Brazil
 <img src="modelosir.png" alt="modelosirparaestados">
 
 
