@@ -81,9 +81,13 @@ ABOUT TAXS IN BRASIL
 <img src="txa_letalidade.png" alt="taxamortalidade">
 
 Lethality rate by region of Brazil
+
 Region Southeast:
+
 <img src="letalidade_sudeste.png" alt="taxamortalidade">
+
 Region South:
+
 <img src="letalidade_sul.png" alt="taxamortalidade">
 
 ABOUT SIR MODEL
@@ -101,11 +105,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT - email@example.com --->
 ## Contact
+
 Cláudio M Paulo - [@cmp0484](https://twitter.com/cmp0484)
 
 Project corona: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 
 [LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
+
 [Currículo Lattes](http://lattes.cnpq.br/4172070751691684)
 
 <!-- ACKNOWLEDGEMENTS -->
