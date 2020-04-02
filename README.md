@@ -56,7 +56,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Observing the worldwide tendency to ignore some diseases that can become a pandemic. the pandemic that is in fashion requiring some knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.
 <!--
@@ -65,7 +64,7 @@ Here's why:
 * You shouldn't be doing the same tasks over and over like creating a README from scratch
 * You should element DRY principles to the rest of your life :smile: Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.A list of commonly used resources that I find helpful are listed in the acknowledgements.-->
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/quX67ys4Dbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- GETTING STARTED -->
 ## Getting Started
