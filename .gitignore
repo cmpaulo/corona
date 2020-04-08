@@ -1,11 +1,11 @@
 # routines #
 #############
-.ipynb_checkpoints/
-.ipynb
-.py
-.csv
-.txt
-.sh
+*.ipynb_checkpoints/
+*.ipynb
+*.py
+*.csv
+*.txt
+*.sh
 
 # Compiled source #
 ###################
