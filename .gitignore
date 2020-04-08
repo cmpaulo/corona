@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # docs #
 #############
 *.doc
@@ -16,6 +17,16 @@
 # excude this file
 !Corona19-Brazil_projeto.ipynb
 !Corona19-Brazil_projeto.py
+=======
+# routines #
+#############
+.ipynb_checkpoints/
+.ipynb
+.py
+.csv
+.txt
+.sh
+>>>>>>> 7e30cec... add a list to ignore
 
 # Compiled source #
 ###################
