@@ -74,11 +74,13 @@ git clone https://github.com/cmpaulo/corona.git
 <!-- USAGE EXAMPLES -->
 ## Charts
 
-ABOUT RATES IN BRAZIL <br/>
+Forecast of the number of infected for Brazil. <br/>
+<img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
+
+
+Lethality rate and infection rate by states in Brazil.<br/>
 
 <img src="txa_letalidade.png" alt="taxamortalidade"> <br/>
-
-Lethality rate by region of Brazil <br/>
 
 Southeast Region: <br/>
 
@@ -94,7 +96,9 @@ SIR model is a simple mathematical model for epidemics. Epidemics happen when a 
 
 This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.<br/>
 SIR model by region of Brazil:<br/>
+
 <img src="SIR_modelSP.png" alt="modelosirparaestados"> <br/>
+
 <img src="SIR_modelRS.png" alt="modelosirparaestados"> <br/>
 
 
