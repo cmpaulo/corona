@@ -5,6 +5,9 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
+# fatality_rate_southest.png
+# fatality_rate_south.png
+# Fatality_rate.png
 -->
 
 <!-- PROJECT LOGO -->
@@ -78,17 +81,17 @@ Forecast of the number of infected for Brazil. <br/>
 <img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
 
 
-Lethality rate and infection rate by states in Brazil.<br/>
+Fatality rate and infection rate by states in Brazil.<br/>
 
-<img src="txa_letalidade.png" alt="taxamortalidade"> <br/>
+<img src="Fatality_rate.png" alt="Fatality_rate"> <br/>
 
 Southeast Region: <br/>
 
-<img src="letalidade_sudeste.png" alt="taxamortalidade"> <br/>
+<img src="fatality_rate_southest.png" alt="Fatality_rate_se"> <br/>
 
 South Region: <br/>
 
-<img src="letalidade_sul.png" alt="taxamortalidade"> <br/>
+<img src="fatality_rate_south.png" alt="Fatality_rate_s"> <br/>
 
 ABOUT SIR MODEL <br/>
 
@@ -97,9 +100,9 @@ SIR model is a simple mathematical model for epidemics. Epidemics happen when a 
 This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.<br/>
 SIR model by region of Brazil:<br/>
 
-<img src="SIR_modelSP.png" alt="modelosirparaestados"> <br/>
+<img src="SIR_modelSP.png" alt="modelsirse"> <br/>
 
-<img src="SIR_modelRS.png" alt="modelosirparaestados"> <br/>
+<img src="SIR_modelPR.png" alt="modelsirs"> <br/>
 
 
 <!-- LICENSE -->
