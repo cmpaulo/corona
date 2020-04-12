@@ -124,8 +124,15 @@ Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/c
 <!-- ACKNOWLEDGEMENTS -->
 <!-- REFERENCES -->
 ## References
-* [wiki The MSIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_MSIR_model)
 
+* [wiki The SIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model_is_dynamic_in_three_senses)
+* [Observatório COVID-19 BR](https://covid19br.github.io/index.html)
+  Centre for Mathematical Modelling of Infectious Diseases, Londo School of Hygiene and Tropical Medicine.
+* [CMMID COVID repository] (https://cmmid.github.io/topics/covid19) 
+* [Jonh Hopkins Coronavirus Resource Center] (https://coronavirus.jhu.edu/map.html)
+  Wesley Cota, Universidade de Viçosa.
+* [confirmados de COVID-19 at Brasil] (https://covid19br.wcota.me/)
+* [Python3 toll ] (https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html) 
 
 # CORONA COVID19 BRAZIL
 MODELO Previsão corona19, covid19, covid 19,
