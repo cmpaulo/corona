@@ -125,7 +125,7 @@ Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/c
 <!-- REFERENCES -->
 ## References
 
-* [wiki The SIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model_is_dynamic_in_three_senses)
+* [wiki The SIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model_without_vital_dynamics)
 * [Observatório COVID-19 BR](https://covid19br.github.io/index.html)
   Centre for Mathematical Modelling of Infectious Diseases, Londo School of Hygiene and Tropical Medicine.
 * [CMMID COVID repository] (https://cmmid.github.io/topics/covid19) 
