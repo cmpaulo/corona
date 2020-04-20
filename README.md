@@ -80,29 +80,29 @@ git clone https://github.com/cmpaulo/corona.git
 Forecast of the number of infected for Brazil. <br/>
 <img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
 
-
 Fatality rate and infection rate by states in Brazil.<br/>
 
 <img src="Fatality_rate.png" alt="Fatality_rate"> <br/>
 
-Southeast Region: <br/>
+South America countries: <br/>
 
-<img src="fatality_rate_southest.png" alt="Fatality_rate_se"> <br/>
+<img src="southAmerica_brazil.png" alt="Fatality_rate_se"> <br/>
 
-South Region: <br/>
+Bordering countries of Brazil: <br/>
 
-<img src="fatality_rate_south.png" alt="Fatality_rate_s"> <br/>
+<img src="border_brazil.png" alt="Fatality_rate_s"> <br/>
 
 ABOUT SIR MODEL <br/>
 
-SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for  for the number of susceptible;  "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals.
+SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for  for the number of susceptible; "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals.
 
 This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.<br/>
+<!-- Brazil sub-notifications vx possible notifications about CoronaVirus <br/> -->
 SIR model by region of Brazil:<br/>
 
 <img src="SIR_modelSP.png" alt="modelsirse"> <br/>
 
-<img src="SIR_modelPR.png" alt="modelsirs"> <br/>
+<!-- <img src="SIR_modelPR.png" alt="modelsirs"> <br/> -->
 
 
 <!-- LICENSE -->
