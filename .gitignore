@@ -2,7 +2,7 @@
 #############
 *.ipynb_checkpoints/
 *.ipynb
-*.py
+# *.py
 *.csv
 *.txt
 *.sh
