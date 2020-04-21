@@ -33,6 +33,8 @@ Recupered = 4390
 txfa = Deaths/Cases
 txre = Recupered/Cases
 
+total_data = data.copy()
+
 data.index = pd.to_datetime(data.date)
 # sel data form Brazil
 ctry = data[data["location"] == 'Brazil']
@@ -98,3 +100,104 @@ ax2.legend(loc="lower right")
 ax2.grid(1)
 plt.show()
 fig.savefig("log_data_forecast_brazil.png",dpi=350)
+
+#  Countreis of South America
+############################SA##############
+############################SA##############
+
+sa = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Falkland Islands', 'French Guiana', 
+      'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela']
+sa = sorted(sa)
+san = total_data[(total_data.location.isin(sa)) & (total_data["total_cases"] > 20. )]
+psum = san.groupby('date').total_deaths.sum()
+
+
+############################SA##############
+############################SA##############
+
+fig = plt.figure(figsize=[10,6])
+ax = plt.subplot()
+
+for ii in sa:
+    p = total_data[(total_data["location"] == ii) & (total_data["total_cases"] > 20. )]
+    if len(p) > 0: 
+        ax.plot(p.total_deaths.values,label=ii)
+        ax.text(len(p),p.total_deaths.values.max(),ii)
+ax.plot(psum.values,'g*-',label = "Sum South\n America")
+ax.text(len(psum),psum.values.max(),"Sum SouthAmerica",color="g")
+ax.text(40,1,'update on '+str(datetime.now().date()))
+ax.set_yscale('log')
+ax.set_title("Countries of South America")
+ax.set_ylabel("Number of Infections")
+ax.set_xlim(0,50)
+ax.set_xlabel('Days after the day with over 20 cases confirmeds')
+plt.legend(loc=5)
+# plt.show()
+fig.savefig("southAmerica_brazil.png",dpi=350)
+plt.close()
+
+############################ Countries bordering of Brazil ############################
+############################ Countries bordering of Brazil ############################
+############################ Countries bordering of Brazil ############################
+
+borderBR = ['Argentina', 'Bolivia', 'Brazil', 'Colombia', 'French Guiana', 'Guyana', 'Paraguay', 'Peru', 'Suriname']
+borderBR= sorted(borderBR)
+
+# psum.values
+############################
+fig = plt.figure(figsize=[10,6])
+ax = plt.subplot()
+
+
+for ii in borderBR:
+    p = total_data[(total_data["location"] == ii) & (total_data["total_cases"] > 20. )]
+    if len(p) > 0: 
+        ax.plot(p.total_cases.values,label=ii)
+        ax.text(len(p),p.total_cases.max(),ii)
+
+ax.text(40,20,'update on '+str(today))
+ax.set_yscale('log')
+ax.set_title("Countries bordering of Brazil")
+ax.set_ylabel("Number of Infections")
+ax.set_xlim(0,50)
+ax.set_xlabel('Days after the day with over 20 cases confirmeds')
+plt.legend(loc=5)
+# plt.show()
+fig.savefig("border_brazil.png",dpi=350)
+plt.close()
+
+################# world############################ world###########
+################# world############################ world###########
+
+top = total_data.sort_values('total_cases',ascending=False).where(total_data.location != 'World').dropna().location.unique()[:4]
+top = list(top)
+top.append("Brazil")
+
+################# world############################ world###########
+################# world############################ world###########
+
+fig = plt.figure(figsize=[10,6])
+ax = plt.subplot()
+
+
+for ii in top:
+    if ii == "Brazil":
+        p = total_data[(total_data["location"] == ii) & (total_data["total_cases"] > 100. )]
+#         p['total_cases'] = p['total_cases'].add(10.)
+    else:
+        p = total_data[(total_data["location"] == ii) & (total_data["total_cases"] > 100. )]
+    
+    if len(p) > 0:
+        ax.plot(p.total_cases.values,label=ii)
+        ax.text(len(p),p.total_cases.max(),ii)
+
+ax.text(40,100,'update on '+str(today))
+ax.set_yscale('log')
+ax.set_title("Countries of World")
+ax.set_ylabel("Number of Infections")
+ax.set_xlim(0,60)
+ax.set_xlabel('Days after the day with over 100 cases confirmeds')
+plt.legend(loc=5)
+# plt.show()
+fig.savefig("top_world.png",dpi=350)
+plt.close()
