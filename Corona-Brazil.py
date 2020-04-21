@@ -80,6 +80,10 @@ dprevisto = (today-case1.date()).days
 hojebr = (func(dprevisto, *poptbr))
 
 # Graphic Brazil
+
+# Graphic Brazil
+
+# Graphic Brazil
 fig = plt.figure(figsize=[10,6])
 ax2 = plt.subplot()
 
@@ -109,7 +113,7 @@ sa = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Falklan
       'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela']
 sa = sorted(sa)
 san = total_data[(total_data.location.isin(sa)) & (total_data["total_cases"] > 20. )]
-psum = san.groupby('date').total_deaths.sum()
+psum = san.groupby('date').total_cases.sum()
 
 
 ############################SA##############
@@ -121,15 +125,15 @@ ax = plt.subplot()
 for ii in sa:
     p = total_data[(total_data["location"] == ii) & (total_data["total_cases"] > 20. )]
     if len(p) > 0: 
-        ax.plot(p.total_deaths.values,label=ii)
-        ax.text(len(p),p.total_deaths.values.max(),ii)
+        ax.plot(p.total_cases.values,label=ii)
+        ax.text(len(p),p.total_cases.values.max(),ii)
 ax.plot(psum.values,'g*-',label = "Sum South\n America")
 ax.text(len(psum),psum.values.max(),"Sum SouthAmerica",color="g")
 ax.text(40,1,'update on '+str(datetime.now().date()))
 ax.set_yscale('log')
 ax.set_title("Countries of South America")
 ax.set_ylabel("Number of Infections")
-ax.set_xlim(0,50)
+ax.set_xlim(0,55)
 ax.set_xlabel('Days after the day with over 20 cases confirmeds')
 plt.legend(loc=5)
 # plt.show()
@@ -159,7 +163,7 @@ ax.text(40,20,'update on '+str(today))
 ax.set_yscale('log')
 ax.set_title("Countries bordering of Brazil")
 ax.set_ylabel("Number of Infections")
-ax.set_xlim(0,50)
+ax.set_xlim(0,55)
 ax.set_xlabel('Days after the day with over 20 cases confirmeds')
 plt.legend(loc=5)
 # plt.show()
