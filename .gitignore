@@ -1,10 +1,15 @@
+# docs #
+#############
+*.doc
+*.docx
+*.csv
+*.txt
+
 # routines #
 #############
 *.ipynb_checkpoints/
 *.ipynb
 # *.py
-*.csv
-*.txt
 *.sh
 
 # Compiled source #
