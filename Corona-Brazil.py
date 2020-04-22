@@ -223,12 +223,12 @@ TOP5 = nna.state.unique()[:5]
 fig = plt.figure(figsize=[10,6])
 ax = plt.subplot()
 
-for ii in TOP5[:5]:
+for ii in TOP5:
     p = datos[(datos["state"] == ii) & (datos["totalCases"] > 26. )]
     if len(p) > 0: 
         ax.plot(p.totalCases.values,label=ii)
         ax.text(len(p),p.totalCases.values.max(),ii)
-ax.text(40,1,'update on '+str(datetime.now().date()))
+ax.text(35,50,'update on '+str(datetime.now().date()))
 ax.set_yscale('log')
 ax.set_title("5 States of Brazil")
 ax.set_ylabel("Number of Infections")
