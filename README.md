@@ -84,13 +84,16 @@ Fatality rate and infection rate by states in Brazil.<br/>
 
 <img src="Fatality_rate.png" alt="Fatality_rate"> <br/>
 
+Five states with the bigger number of infections: <br/>
+<img src="n20cases_TOP5.png" alt="TOP5"> <br/>
+
 South America countries: <br/>
 
-<img src="southAmerica_brazil.png" alt="Fatality_rate_se"> <br/>
+<img src="southAmerica_brazil.png" alt="SA cases"> <br/>
 
 Bordering countries of Brazil: <br/>
 
-<img src="border_brazil.png" alt="Fatality_rate_s"> <br/>
+<img src="border_brazil.png" alt="Bordering cases"> <br/>
 
 ABOUT SIR MODEL <br/>
 

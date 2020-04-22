@@ -90,8 +90,8 @@ ax2 = plt.subplot()
 ax2.plot(dateCase[len(ydata)-1:],prbrdata,"b*-",label="5-day Forecast")
 ax2.plot(tested.index,tested["total_cases"],"k*--",label="Confirmed Brazil")
 
-ax2.text(pd.to_datetime("2020-03-02"),hojebr-8e3,"Forecast for "+str(datetime.now().date()))
-ax2.text(pd.to_datetime("2020-03-02"),hojebr-16e3,"ninfect :: "+str(hojebr)[:7])
+ax2.text(pd.to_datetime("2020-03-02"),tested["total_cases"][-1],"Forecast for "+str(datetime.now().date()))
+ax2.text(pd.to_datetime("2020-03-02"),tested["total_cases"][-8],"ninfect :: "+str(hojebr)[:7])
 # ax2.axvline(today,ls="dotted",lw=1.8)
 
 ax2.set_title("COVID19 - Brazil data updated "+str(tested["date"][tested.index[-1]]))
