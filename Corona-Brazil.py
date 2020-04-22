@@ -205,3 +205,37 @@ plt.legend(loc=5)
 # plt.show()
 fig.savefig("top_world.png",dpi=350)
 plt.close()
+
+# top 5 STATES OF BRAZIL########################
+# top 5 STATES OF BRAZIL########################
+# top 5 STATES OF BRAZIL########################
+url ="https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv"
+datos = pd.read_csv(url,header=0,index_col="date")
+############
+############
+listStates = sorted(datos["state"].unique())[:-1]
+datos.index = pd.to_datetime(datos.index)
+nna = datos.loc[:,["state","totalCases"]].where(datos["state"] !='TOTAL').dropna().sort_values(by="totalCases",ascending=False)
+TOP5 = nna.state.unique()[:5]
+########################### TOP 5 ############
+############
+############
+fig = plt.figure(figsize=[10,6])
+ax = plt.subplot()
+
+for ii in TOP5[:5]:
+    p = datos[(datos["state"] == ii) & (datos["totalCases"] > 26. )]
+    if len(p) > 0: 
+        ax.plot(p.totalCases.values,label=ii)
+        ax.text(len(p),p.totalCases.values.max(),ii)
+ax.text(40,1,'update on '+str(datetime.now().date()))
+ax.set_yscale('log')
+ax.set_title("5 States of Brazil")
+ax.set_ylabel("Number of Infections")
+ax.set_xlim(0,45)
+ax.set_xlabel('Days after the day with over 20 cases confirmeds')
+plt.legend(loc=5)
+plt.grid("both")
+plt.show()
+fig.savefig("n20cases_TOP5.png",dpi=350)
+plt.close()
