@@ -45,8 +45,8 @@ xdays = []
 ydata = []
 dateCase=[]
 today=datetime.now().date()
-offsetcases = 20.
-ndays=2
+offsetcases = 1000.
+ndays=10
 ################################### Cases #####
 cond_idx = tested.index[np.where(tested["total_cases"]>offsetcases)]
 case1 = cond_idx[0]
@@ -64,7 +64,7 @@ for ib in enumerate(ndate):
 ydata = np.array(ydata)
 xdata = np.array(xdays)
 for i in range(5):
-    dateCase.append(str((pd.to_datetime(dateCase[-1])+timedelta(days=1)).date()))
+    dateCase.append((ndate[-1]+timedelta(days=i)).date())
 dateCase = pd.to_datetime(dateCase)
 # ajuste exponencial com a func, dos dasos xdata e ydata Brasil
 from scipy.optimize import curve_fit
@@ -73,7 +73,8 @@ def func(x, a, b, c):
 poptbr, pcovbr = curve_fit(func, xdata, ydata)
 perrbr = np.sqrt(np.diag(pcovbr))
 # Forecast 5 days
-prbrxdata = np.arange(xdata.max(),xdata.max()+6)
+ultimo = (ndate[-1]-case1).days
+prbrxdata = np.arange(ultimo+1,ultimo+7)
 prbrdata = func(prbrxdata, *poptbr)
 
 dprevisto = (today-case1.date()).days
@@ -87,7 +88,7 @@ hojebr = (func(dprevisto, *poptbr))
 fig = plt.figure(figsize=[10,6])
 ax2 = plt.subplot()
 
-ax2.plot(dateCase[len(ydata)-1:],prbrdata,"b*-",label="5-day Forecast")
+ax2.plot(dateCase[-len(prbrdata)+1:],prbrdata[:-1],"b*-",label="5-day Forecast")
 ax2.plot(tested.index,tested["total_cases"],"k*--",label="Confirmed Brazil")
 
 ax2.text(pd.to_datetime("2020-03-02"),tested["total_cases"][-1],"Forecast for "+str(datetime.now().date()))
