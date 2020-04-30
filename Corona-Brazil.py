@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from datetime import datetime
 from datetime import timedelta
-import wget
-import os
+# import wget
+# import os
 plt.style.use('seaborn')
 
 # # delete a old file
