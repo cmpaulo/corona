@@ -50,8 +50,8 @@
 
 Observing the worldwide tendency to ignore some diseases that can become a pandemic, I have decided to give my contribution for understanding  the COVID-19 pandemic in Southeast Brazil. This pandemic is demanding more knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.
 
-This is a shortcut to a video that is on the <a href="https://cmpaulo.github.io/corona/"> Corona Website  </a> from this repository. This video is in Brazilian Portuguese and presents some clarifications about the coronavirus from the biologist Anderson Sena. 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/quX67ys4Dbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This is a shortcut to a video that is on the <a href="https://cmpaulo.github.io/corona/"> Corona Website  </a> from this repository. This video is in Brazilian Portuguese and presents some clarifications about the coronavirus. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gs-HlvC5iJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -103,7 +103,7 @@ This model is also missing some elements, such as the creation of new susceptibl
 <!-- Brazil sub-notifications vx possible notifications about CoronaVirus <br/> -->
 SIR model by region of Brazil:<br/>
 
-<img src="SIR_modelSP.png" alt="modelsirse"> <br/>
+<!-- <img src="SIR_modelSP.png" alt="modelsirs/e"> <br/> -->
 
 <!-- <img src="SIR_modelPR.png" alt="modelsirs"> <br/> -->
 
