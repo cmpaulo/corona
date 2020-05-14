@@ -27,11 +27,11 @@ plt.style.use('seaborn')
 data = pd.read_csv("https://covid.ourworldindata.org/data/ecdc/full_data.csv")
 
 # data from 🔅 Worldometers:
-Cases =  30425. #❗️(103 novos)
-Deaths = 1924 #❗️(11 novos) 😔
-Recupered = 4390
-txfa = Deaths/Cases
-txre = Recupered/Cases
+# Cases =  30425. #❗️(103 novos)
+# Deaths = 1924 #❗️(11 novos) 😔
+# Recupered = 4390
+# txfa = Deaths/Cases
+# txre = Recupered/Cases
 
 total_data = data.copy()
 
@@ -41,30 +41,32 @@ ctry = data[data["location"] == 'Brazil']
 tested = ctry.copy()
 
 # create a arrays for curve fit parameters of a exponential equation
-xdays = []
-ydata = []
+# xdays = []
+# ydata = []
 dateCase=[]
-today=datetime.now().date()
-offsetcases = 1000.
-ndays=10
-################################### Cases #####
-cond_idx = tested.index[np.where(tested["total_cases"]>offsetcases)]
-case1 = cond_idx[0]
-ndate = cond_idx
-########################################
-for ib in enumerate(ndate):
-    if tested["total_cases"][cond_idx[ib[0]]] >= offsetcases:
-        selday = (ib[1]-case1).days == np.arange(0,len(cond_idx)+ndays,ndays)
-        if True in selday:
-            xdays.append((ib[1]-case1).days)
-            ydata.append(tested["total_cases"][cond_idx[ib[0]]])
-            dateCase.append(tested["date"][cond_idx[ib[0]]])
+# today=datetime.now().date()
+# offsetcases = 1000.
+# ndays=10
+# ################################### Cases #####
+# cond_idx = tested.index[np.where(tested["total_cases"]>offsetcases)]
+# case1 = cond_idx[0]
+# ndate = cond_idx
+# ########################################
+# for ib in enumerate(ndate):
+#     if tested["total_cases"][cond_idx[ib[0]]] >= offsetcases:
+#         selday = (ib[1]-case1).days == np.arange(0,len(cond_idx)+ndays,ndays)
+#         if True in selday:
+#             xdays.append((ib[1]-case1).days)
+#             ydata.append(tested["total_cases"][cond_idx[ib[0]]])
+#             dateCase.append(tested["date"][cond_idx[ib[0]]])
+# >>>>>>>>>
 
 # do fiting
-ydata = np.array(ydata)
-xdata = np.array(xdays)
+ydata = tested.last("13D").total_cases.values
+xdata = np.arange(len(ydata))
+ndate = tested.last("1D").index[0]
 for i in range(5):
-    dateCase.append((ndate[-1]+timedelta(days=i)).date())
+    dateCase.append((ndate+timedelta(days=i)).date())
 dateCase = pd.to_datetime(dateCase)
 # ajuste exponencial com a func, dos dasos xdata e ydata Brasil
 from scipy.optimize import curve_fit
@@ -73,15 +75,17 @@ def func(x, a, b, c):
 poptbr, pcovbr = curve_fit(func, xdata, ydata)
 perrbr = np.sqrt(np.diag(pcovbr))
 # Forecast 5 days
-ultimo = (ndate[-1]-case1).days
+# ultimo = (ndate-case1).days
+# prbrxdata = np.arange(ultimo-1,ultimo+4)
+ultimo = len(xdata)
 prbrxdata = np.arange(ultimo-1,ultimo+4)
 prbrdata = func(prbrxdata, *poptbr)
 
 serro = func(prbrxdata, *(poptbr+perrbr))
 ierro = func(prbrxdata, *poptbr-perrbr)
-
-dprevisto = (today-case1.date()).days
-hojebr = (func(dprevisto, *poptbr))
+today = len(xdata)
+dprevisto = today
+hojebr = func(dprevisto, *poptbr)
 
 # Graphic Brazil
 
@@ -114,7 +118,7 @@ fig.savefig("log_data_forecast_brazil.png",dpi=350)
 #  Countreis of South America
 ############################SA##############
 ############################SA##############
-
+today=datetime.now().date()
 sa = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Falkland Islands', 'French Guiana', 
       'Guyana', 'Paraguay', 'Peru', 'Suriname', 'Uruguay', 'Venezuela']
 sa = sorted(sa)
