@@ -80,11 +80,11 @@ git clone https://github.com/cmpaulo/corona.git
 Forecast of the number of infected for Brazil. <br/>
 <img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
 
-Fatality rate and infection rate by states in Brazil.<br/>
+Fatality rate and infection rate by States in Brazil.<br/>
 
 <img src="Fatality_rate.png" alt="Fatality_rate"> <br/>
 
-Five states with the bigger number of infections: <br/>
+Five States of Brazil with the bigger number of infections: <br/>
 <img src="n20cases_TOP5.png" alt="TOP5"> <br/>
 
 South America countries: <br/>
