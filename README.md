@@ -122,7 +122,7 @@ Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/c
 Twitter [@cmp0484](https://twitter.com/cmp0484)
 <!-- Lattes(CnPq): [Currículo Lattes](http://lattes.cnpq.br/4172070751691684) -->
 
-Frederic Gustavo
+Frederico Gustavo
 LinkedIn: [LinkedIn](www.linkedin.com/in/fredericogustavo)
 Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 

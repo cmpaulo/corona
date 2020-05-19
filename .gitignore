@@ -13,6 +13,8 @@
 *.ipynb
 # *.py
 *.sh
+# excude this file
+!Corona19-Brazil_projeto.ipynb
 
 # Compiled source #
 ###################

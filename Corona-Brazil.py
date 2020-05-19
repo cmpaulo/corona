@@ -153,7 +153,7 @@ plt.close()
 ############################ Countries bordering of Brazil ############################
 
 borderBR = ['Argentina', 'Bolivia', 'Brazil', 'Colombia', 'French Guiana', 'Guyana', 'Paraguay', 'Peru', 'Suriname']
-borderBR= sorted(borderBR)
+borderBR = sorted(borderBR)
 
 # psum.values
 ############################
