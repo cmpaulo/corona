@@ -80,17 +80,14 @@ git clone https://github.com/cmpaulo/corona.git
 Forecast of the number of infected for Brazil. <br/>
 <img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
 
-|    | Date       |   PredictionNumberInfections 
-|---:|:-----------|-----------------------------:|
-|  0 | 2020-05-18 |                       242781 |
-|  1 | 2020-05-19 |                       257066 |
-|  2 | 2020-05-20 |                       272102 |
-|  3 | 2020-05-21 |                       287929 |
-|  4 | 2020-05-22 |                       304588 |
-
-
-<table border="1" class="dataframe">\n  <thead>\n    <tr style="text-align: right;">\n      <th></th>\n      <th>Date</th>\n      <th>PredictionNumberInfections</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>2020-05-18</td>\n      <td>242781.087012</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>2020-05-19</td>\n      <td>257066.257434</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>2020-05-20</td>\n      <td>272102.433754</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>2020-05-21</td>\n      <td>287929.098167</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>2020-05-22</td>\n      <td>304587.808540</td>\n    </tr>\n  </tbody>\n</table>
-
+|    | Date       |   PredictionNumberInfections |   dataNumber |
+|---:|:-----------|-----------------------------:|-------------:|
+|  0 | 2020-05-18 |                       242726 |       241080 |
+|  1 | 2020-05-19 |                       256927 |          nan |
+|  2 | 2020-05-20 |                       271851 |          nan |
+|  3 | 2020-05-21 |                       287536 |          nan |
+|  4 | 2020-05-22 |                       304019 |          nan |
+|  5 | 2020-05-23 |                       321342 |          nan |
 
 Fatality rate and infection rate by States in Brazil.<br/>
 
