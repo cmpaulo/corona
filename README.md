@@ -38,10 +38,10 @@
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
-* [Graphic of Model](#Graphics)
+* [Charts](#charts)
 * [License](#license)
 * [Contact](#contact)
-* [References](#References)
+* [References](#references)
 
 
 
@@ -116,13 +116,15 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT - email@example.com --->
 ## Contact
 
-Cláudio M. Paulo - [@cmp0484](https://twitter.com/cmp0484)
-
+Cláudio M. Paulo 
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
 Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+Twitter [@cmp0484](https://twitter.com/cmp0484)
+<!-- Lattes(CnPq): [Currículo Lattes](http://lattes.cnpq.br/4172070751691684) -->
 
-[LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
-
-[Currículo Lattes](http://lattes.cnpq.br/4172070751691684)
+Frederic Gustavo
+LinkedIn: [LinkedIn](www.linkedin.com/in/fredericogustavo)
+Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 
 <!-- ACKNOWLEDGEMENTS -->
 <!-- REFERENCES -->
