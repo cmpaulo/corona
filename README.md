@@ -126,14 +126,29 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Cláudio M. Paulo 
+
 LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
-Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 Twitter [@cmp0484](https://twitter.com/cmp0484)
 <!-- Lattes(CnPq): [Currículo Lattes](http://lattes.cnpq.br/4172070751691684) -->
 
 Frederico Gustavo
+
 LinkedIn: [LinkedIn](www.linkedin.com/in/fredericogustavo)
+
+Aracele Torres
+
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/aracele-lima-torres-b96353134)
+
+Gustavo Reginato
+
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/gustavo-reginato/)
+
+Pedro Venturott
+
+LinkedIn: [LinkedIn](https://www.linkedin.com/in/pedro-henrique-gomes-venturott-30a379120/)
+
 Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+
 
 <!-- ACKNOWLEDGEMENTS -->
 <!-- REFERENCES -->
