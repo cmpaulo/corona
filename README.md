@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/cmpaulo/corona">
-    <img src="logo.png" alt="Logo" width="200" height="200">
+    <img src="images/logo.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Coronavirus (COVID-19) in Brazil</h3>
@@ -78,7 +78,7 @@ git clone https://github.com/cmpaulo/corona.git
 ## Charts
 
 Forecast of the number of infected for Brazil. <br/>
-<img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
+<img src="images/log_data_forecast_brazil.png" alt="Forecast"> <br/>
 
 |    | Date       |   PredictionNumberInfections |   dataNumber |
 |---:|:-----------|-----------------------------:|-------------:|
@@ -91,18 +91,18 @@ Forecast of the number of infected for Brazil. <br/>
 
 Fatality rate and infection rate by States in Brazil.<br/>
 
-<img src="Fatality_rate.png" alt="Fatality_rate"> <br/>
+<img src="images/Fatality_rate.png" alt="Fatality_rate"> <br/>
 
 Five States of Brazil with the bigger number of infections: <br/>
-<img src="n20cases_TOP5.png" alt="TOP5"> <br/>
+<img src="images/n20cases_TOP5.png" alt="TOP5"> <br/>
 
 South America countries: <br/>
 
-<img src="southAmerica_brazil.png" alt="SA cases"> <br/>
+<img src="images/southAmerica_brazil.png" alt="SA cases"> <br/>
 
 Bordering countries of Brazil: <br/>
 
-<img src="border_brazil.png" alt="Bordering cases"> <br/>
+<img src="images/order_brazil.png" alt="Bordering cases"> <br/>
 
 ABOUT SIR MODEL <br/>
 
