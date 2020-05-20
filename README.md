@@ -91,7 +91,7 @@ Forecast of the number of infected for Brazil. <br/>
 
 Fatality rate and infection rate by States in Brazil.<br/>
 
-<img src="images/Fatality_rate.png" alt="Fatality_rate"> <br/>
+<img src="images/fatality_rate.png" alt="Fatality_rate"> <br/>
 
 Five States of Brazil with the bigger number of infections: <br/>
 <img src="images/n20cases_TOP5.png" alt="TOP5"> <br/>
@@ -102,7 +102,7 @@ South America countries: <br/>
 
 Bordering countries of Brazil: <br/>
 
-<img src="images/order_brazil.png" alt="Bordering cases"> <br/>
+<img src="images/border_brazil.png" alt="Bordering cases"> <br/>
 
 ABOUT SIR MODEL <br/>
 
