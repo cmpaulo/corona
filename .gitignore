@@ -11,10 +11,11 @@
 #############
 *.ipynb_checkpoints/
 *.ipynb
-# *.py
+*.py
 *.sh
 # excude this file
 !Corona19-Brazil_projeto.ipynb
+!Corona19-Brazil_projeto.py
 
 # Compiled source #
 ###################
