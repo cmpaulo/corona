@@ -1,10 +1,17 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[49]:
+
+
 # coding: utf-8
 
 # In[17]:
 
 
 from datetime import timedelta, datetime
-from corona.funcoes import *
+
+import numpy as np
 
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -13,6 +20,9 @@ import plotly.graph_objs as go
 
 # import wget
 # import os
+
+
+# In[7]:
 
 
 plt.style.use('seaborn')
@@ -76,7 +86,8 @@ dateCase = pd.to_datetime(dateCase)
 
 # ajuste exponencial com a func, dos dados xdata e ydata Brasil
 from scipy.optimize import curve_fit
-
+def func(x, a, b, c):
+    return a * np.exp(b * x) + c
 poptbr, pcovbr = curve_fit(func, xdata, ydata)
 perrbr = np.sqrt(np.diag(pcovbr))
 # Forecast 5 days
@@ -90,6 +101,10 @@ ierro = func(prbrxdata, *poptbr - perrbr)
 today = len(xdata)
 dprevisto = today
 hojebr = func(dprevisto, *poptbr)
+
+
+# In[8]:
+
 
 # Graphic Brazil
 
@@ -117,7 +132,10 @@ ax2.set_ylim(1,)
 ax2.legend(loc="lower right")
 ax2.grid(1)
 # plt.show()
-fig.savefig("images/log_data_forecast_brazil.png", dpi=350)
+# fig.savefig("images/log_data_forecast_brazil.png", dpi=350)
+
+
+# In[ ]:
 
 
 #  Countreis of South America
@@ -253,41 +271,56 @@ plt.grid("both")
 fig.savefig("images/n20cases_TOP5.png", dpi=350)
 plt.close()
 
+
+# In[13]:
+
+
+##########################################################################################
+##########################################################################################
 # Gráfico interativo com a taxa de infectados, mortos por Estado
 # dados > arquivo CSV
 # url - variável armazena o endereço web do arquivo utilizado
 # Desenvolvedor: Frederico Gustavo Magalhães - Data: 18/05/2020
 
-ax = plt.subplot()
+# ax = plt.subplot()
 data = pd.read_csv("https://raw.githubusercontent.com/wcota/covid19br/master/cases-brazil-states.csv")
 datos = pd.DataFrame(data)
 datos.head()
 
-figura = go.Figure()
 
+# In[38]:
+
+
+estado = "SP"
+ndatos = datos[datos.state == estado]
+
+
+# In[42]:
+
+
+figura = go.Figure()
+# ndatos['date'] = pd.to_datetime(ndatos['date'])
+if estado == "TOTAL": estado = "Brasil"
 # Linha com os novos casos de infectados
-figura.add_trace(go.Scatter(x=datos.date,
-                            y=datos.newCases,
+figura.add_trace(go.Scatter(x=ndatos.date,
+                            y=ndatos.newCases,
                             mode='lines+markers',
-                            name='Novos casos de infectados'))
+                            name='Novos Casos '+estado))
 
 # Linha com os novos casos de morte
-figura.add_trace(go.Scatter(x=datos.date,
-                            y=datos.newDeaths,
+figura.add_trace(go.Scatter(x=ndatos.date,
+                            y=ndatos.newDeaths,
                             mode='lines+markers',
-                            name='Novos casos de mortos'))
-
-# Plota a figura
-plt.gca().get_xaxis().set_visible(False)  # This is what it warns me about, I think
-plt.gca().get_yaxis().set_visible(False)  # It also warns me about this.
-ax.text(max(ax.get_xlim()) - 15, 100, 'update on ' + str(today))
-ax.set_ylabel("Number of the new cases")
-ax.set_xlim(0, max(ax.get_xlim()) + 15)
-ax.set_xlabel('Interative graphic')
-plt.legend(loc=5)
-plt.grid("both")
-fig.savefig("images/number-new-cases.png", dpi=1500)
+                            name='Novas Mortes '+estado))
+# salva como figura estatica
+fig.savefig("./images/number-new-cases.png", dpi=1500)
+# salva como html com interação..
+# figura.write_html('./images/newCases_tst.html')
 figura.show()
+
+
+# In[57]:
+
 
 # Gráfico interativo com a taxa de infectados, mortos por Estado
 # dados > arquivo CSV
@@ -296,78 +329,55 @@ figura.show()
 
 
 # criar um gráfico interativo com o Plotly
-ax = plt.subplot()
-# gráfico bbas3 (candlestick)
 fig = go.Figure(
     data=[
-          go.Candlestick(
-              x=datos['date'],
-              open=datos['newCases'],
-              high=datos['totalCases'],
-              low=datos['totalCases_per_100k_inhabitants'],
-              close=datos['totalCases']
+          go.Bar(
+              x=ndatos['date'],
+              y=ndatos['totalCases_per_100k_inhabitants'],
               )
           ]
     )
 
 fig.update_layout(
-    title='Evolution the COVID-19 for 100k inhabitants',
-    yaxis_title='Evolution',
+    title='Evolution the COVID-19 for 100k inhabitants in '+estado,
+    yaxis_title='N Infections',
     shapes = [dict(
-        x0='2020-01-01', x1='2020-01-01', y0=0, y1=1, xref='x', yref='paper',
+        x0='2020-03-01', x1='2020-03-01', y0=0, y1=1, xref='x', yref='paper',
         line_width=2)],
     annotations=[dict(
-        x='2020-01-01', y=0.05, xref='x', yref='paper',
+        x='2020-03-01', y=0.05, xref='x', yref='paper',
         showarrow=False, xanchor='left', text='beginning of period')]
 )
 
-# Plota a figura
-plt.gca().get_xaxis().set_visible(False)  # This is what it warns me about, I think
-plt.gca().get_yaxis().set_visible(False)  # It also warns me about this.
-ax.text(max(ax.get_xlim()) - 15, 100, 'update on ' + str(today))
-ax.set_ylabel("Evolution the COVID-19 for 100k inhabitants")
-ax.set_xlim(0, max(ax.get_xlim()) + 15)
-ax.set_xlabel('Interative graphic')
-plt.legend(loc=5)
-plt.grid("both")
-fig.savefig("images/evolution-case-100k-inhabitants.png", dpi=1500)
+# fig.savefig("images/evolution-case-100k-inhabitants.png", dpi=1500)
 fig.show()
+
+
+# In[67]:
+
 
 # criar um gráfico interativo com o Plotly
-# gráfico bbas3 (candlestick)
-ax = plt.subplot()
 
-fig = go.Figure(
+fig2 = go.Figure(
     data=[
-          go.Candlestick(
-              x=datos['date'],
-              open=datos['newCases'],
-              high=datos['newDeaths'],
-              low=datos['totalCases'],
-              close=datos['totalDeaths']
+          go.Bar(
+              x=ndatos['date'],
+              y=ndatos['deaths']
               )
           ]
     )
 
-fig.update_layout(
-    title='Evolution of the COVID-19',
-    yaxis_title='Evolution',
+fig2.update_layout(
+    title='Evolution of total deaths of COVID-19'+estado,
+    yaxis_title='Deaths',
     shapes=[dict(
-        x0='2020-01-01', x1='2020-01-01', y0=0, y1=1, xref='x', yref='paper',
+        x0='2020-03-01', x1='2020-03-01', y0=0, y1=1, xref='x', yref='paper',
         line_width=2)],
     annotations=[dict(
-        x='2020-01-01', y=0.05, xref='x', yref='paper',
+        x='2020-03-01', y=0.05, xref='x', yref='paper',
         showarrow=False, xanchor='left', text='beginning of period')]
 )
 
-# Plota a imagem
-plt.gca().get_xaxis().set_visible(False)  # This is what it warns me about, I think
-plt.gca().get_yaxis().set_visible(False)  # It also warns me about this.
-ax.text(max(ax.get_xlim()) - 15, 100, 'update on ' + str(today))
-ax.set_ylabel("evolution-COVID-19")
-ax.set_xlim(0, max(ax.get_xlim()) + 15)
-ax.set_xlabel('Interative graphic')
-plt.legend(loc=5)
-plt.grid("both")
-fig.savefig("images/evolution-COVID-19.png", dpi=1500)
-fig.show()
+# fig.savefig("images/evolution-COVID-19.png", dpi=1500)
+fig2.show()
+
