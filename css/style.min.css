@@ -1257,7 +1257,7 @@ tr:nth-child(even){background-color: #f2f2f2;}
 }
 
 .expanded__image {
-	max-width: 100%;
+	max-width: 500%;
     width: auto;
     height: auto;
 	padding: 1pt 0;
