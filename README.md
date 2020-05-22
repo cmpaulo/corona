@@ -30,40 +30,44 @@
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-
-* [About the Project](#about-the-project)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Graphic of Model](#Graphics)
-* [License](#license)
-* [Contact](#contact)
-* [References](#References)
+*   [About the project](#about)
+*   [Getting started](#started)
+*   [Charts](#charts)
+*   [References](#references)
+*   [Contact](#contact)
 
 
+About the project
+-----------------
 
-<!-- ABOUT THE PROJECT -->
-## About the Project
+Observing the worldwide tendency to ignore some diseases that can become a pandemic, I have decided to give my contribution for understanding the COVID-19 pandemic in Southeast Brazil. This pandemic is demanding more knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.
 
-Observing the worldwide tendency to ignore some diseases that can become a pandemic, I have decided to give my contribution for understanding  the COVID-19 pandemic in Southeast Brazil. This pandemic is demanding more knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.
+SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for for the number of susceptible; "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals. This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.
 
-This is a shortcut to a video that is on the <a href="https://cmpaulo.github.io/corona/"> Corona Website  </a> from this repository. This video is in Brazilian Portuguese and presents some clarifications about the coronavirus from the biologist Anderson Sena. 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/quX67ys4Dbo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Lockdown in Brazil
+* * *
 
-<!-- GETTING STARTED -->
-## Getting Started
+This video is in Brazilian Portuguese and presents some clarifications about the coronavirus.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gs-HlvC5iJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+
+Getting Started
+---------------
 
 This program has a database until March 24, 2020 for the number of confirmed cases for several countries. With the programs you can carry out an assessment of the lethality of COVID-19, and time/number evolution of infections.
 
 ### Prerequisites
 
 The list of things that you need to use and how to install them.
+
 * pip
 ```sh
 pip install pandas numpy scipy wget
 ```
 
+pip install pandas numpy scipy wget
+
 ### Installation
+
 
 1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 2. Clone the repo
@@ -71,57 +75,87 @@ pip install pandas numpy scipy wget
 git clone https://github.com/cmpaulo/corona.git
 ```
 
-<!-- USAGE EXAMPLES -->
-## Charts
 
-ABOUT RATES IN BRAZIL <br/>
-
-<img src="txa_letalidade.png" alt="taxamortalidade"> <br/>
-
-Lethality rate by region of Brazil <br/>
-
-Southeast Region: <br/>
-
-<img src="letalidade_sudeste.png" alt="taxamortalidade"> <br/>
-
-South Region: <br/>
-
-<img src="letalidade_sul.png" alt="taxamortalidade"> <br/>
-
-ABOUT SIR MODEL <br/>
-
-SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for  for the number of susceptible;  "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals.
-
-This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.
-
-SIR model by region of Brazil:
-<img src="SIR_modelSP.png" alt="modelosirparaestados"> <br/>
-<img src="SIR_modelRS.png" alt="modelosirparaestados"> <br/>
+Charts
+------
 
 
-<!-- LICENSE -->
-## License
+### Forecast of the number of infected for Brazil
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This chart shows the number of infected people for Brazil.
 
-<!-- CONTACT - email@example.com --->
-## Contact
+![](images/log_data_forecast_brazil.png)
 
-Cláudio M. Paulo - [@cmp0484](https://twitter.com/cmp0484)
+* * *
 
-Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+### Infection prediction table
 
-[LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
+This table predicts the number of infected people for Brazil.
 
-[Currículo Lattes](http://lattes.cnpq.br/4172070751691684)
+|   	|    Date    	| Prediction 	| Final number 	|
+|:-:	|:----------:	|:----------:	|:------------:	|
+| 0 	| 2020-05-19 	|   255847   	|    254220    	|
+| 1 	| 2020-05-20 	|   270500   	|       -      	|
+| 2 	| 2020-05-21 	|   285876   	|       -      	|
+| 3 	| 2020-05-22 	|   302011   	|       -      	|
+| 4 	| 2020-05-23 	|   318943   	|       -      	|
+| 5 	| 2020-05-24 	|   336711   	|       -      	|
 
-<!-- ACKNOWLEDGEMENTS -->
-<!-- REFERENCES -->
-## References
-* [wiki The MSIR model](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_MSIR_model)
+* * *
+
+### Fatality rate and infection rate by States in Brazil
+
+This chart shows the fatality rate and infection rate by States in Brazil.
+
+![](images/fatality_rate.png)
+
+* * *
+
+### Five States of Brazil with the bigger number of infections
+
+This chart shows five States of Brazil with the bigger number of infections
+
+![](images/n20cases_TOP5.png)
+
+* * *
+
+### South America countries
+
+This chart compares the cases of infections in South America countries
+
+![](images/southAmerica_brazil.png)
+
+* * *
+
+### Bordering countries of Brazil
+
+This chart compares the cases of infections in bordering countries of Brazil
+
+![](images/n20cases_TOP5.png)
+
+References
+----------
 
 
-# CORONA COVID19 BRAZIL
-MODELO Previsão corona19, covid19, covid 19,
-MODELO PREDIÇÃO CORONA VÍRUS, QUARENTENA, ESTADO DE SÃO PAULO, BRASIL
-MODELO SIR, MODELO SIRE,BRASIL 2019
+
+*   [The SIR model.](https://idmod.org/docs/malaria/model-sir.html#sir-without-vital-dynamics)
+*   [Observatório COVID-19 BR.](https://covid19br.github.io/index.html)
+*   [Covid-19 Repository from the Centre for Mathematical Modelling of Infectious Diseases (CMMID), London School of Hygiene and Tropical Medicine.](https://cmmid.github.io/topics/covid19/)
+*   [Jonh Hopkins Coronavirus Resource Center.](https://coronavirus.jhu.edu/map.html)
+*   [Wesley Cota (UFV) website for monitoring confirmed cases in Brazil.](https://covid19br.wcota.me/)
+*   [Python tool (SciPy).](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html)
+
+Contact
+-------
+
+
+This is a volunteer-driven project made by people from different areas and backgrounds. If you would like to know better about us, here are some links:
+
+*   Claudio Paulo \[Creator and project leader\]
+*   Frederico Gustavo \[Contributor\]
+*   Aracele Torres \[Contibutor\]
+*   Pedro Venturott \[Contibutor\]
+*   Gustavo Reginato \[Contributor\]
+
+
+
