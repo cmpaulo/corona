@@ -64,8 +64,9 @@
         <div class="steps landing__section">
             <div class="container">
                 <h2>About the project</h2>
+                <hr class="hr1"></hr>
                     <p>Observing the worldwide tendency to ignore some diseases that can become a pandemic, I have decided to give my contribution for understanding the COVID-19 pandemic in Southeast Brazil. This pandemic is demanding more knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.</p>
-                    <h4>About the SIR model<h4>
+
                     <p>SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for for the number of susceptible; "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals. This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.</p>
             </div>
         </div>
@@ -76,6 +77,7 @@
 	<div class="steps landing__section">
         <div class="container">
                 <h3>Lockdown in Brazil</h3>
+                <hr class="hr1"></hr>
                     <p>This video is in Brazilian Portuguese and presents some clarifications about the coronavirus.</p>
                     <p><iframe width="560" height="315" src="https://www.youtube.com/embed/gs-HlvC5iJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
         </div>
@@ -89,6 +91,7 @@
 			<div class="expanded__inner">
 				<div class="expanded__content">
 					<h2 class="expanded__title">Getting Started</h2>
+					<hr class="hr1"></hr>
 					<p class="expanded__text">This program has a database until March 24, 2020 for the number of confirmed cases for several countries. With the programs you can carry out an assessment of the lethality of COVID-19, and time/number evolution of infections.</p>
 					<h3>Prerequisites</h3>
 					<p>The list of things that you need to use and how to install them.</p>
@@ -98,7 +101,7 @@
                         <p class="command">pip install pandas numpy scipy wget</p>
                     <h3>Installation</h3>
                         <ol>
-                            <li>Get a free API Key at <a href="https://github.com/cmpaulo/corona">https://github.com/cmpaulo/corona</a></li>
+                            <li>Get a free API Key at <a id="git-link" href="https://github.com/cmpaulo/corona" target="_blank">https://github.com/cmpaulo/corona</a></li>
                             <li>Clone the repo:</li>
                         </ol>
                             <p class="command">git clone https://github.com/cmpaulo/corona.git</p>
@@ -110,25 +113,30 @@
 	
 	<!-- Charts -->
 	
-	<a name="charts">
-	<!-- Expanded sections -->
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="images/log_data_forecast_brazil.png" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Forecast of the number of infected for Brazil</h2>
-					<p class="expanded__text">This chart shows the number of infected people for Brazil.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-                <table class="data__frame">
+    <a name="charts">
+        <div class="expanded landing__section">
+            <div class="container">
+                <div class="expanded__inner">
+                    <div class="expanded__content">
+                        <h2 class="expanded__title">Charts</h2>
+                        <hr class="hr1"></hr>
+                    </div>
+                </div>	
+            </div>	
+		
+            <div class="expanded__inner" class="container">
+                <h3 class="expanded__title">Forecast of the number of infected for Brazil</h3>
+                    <p class="expanded__text">This chart shows the number of infected people for Brazil.</p>
+                    <div class="expanded__media">
+                        <img src="images/log_data_forecast_brazil.png" class="expanded__image">
+                    </div>
+            </div>
+    
+            <hr class="hr2">
+            <div class="expanded__inner" class="container">
+                    <h3 class="expanded__title">Infection prediction table</h3>
+					<p class="expanded__text">This table predicts the number of infected people for Brazil.</p>
+                    <table class="data__frame">
                     <thead>
                         <tr>
                             <th></th>
@@ -175,78 +183,66 @@
                             <td>-</td>
                             </tr>
                         </tbody>
-                </table>
-                <div class="expanded__content">
-					<h2 class="expanded__title">Infection prediction table</h2>
-					<p class="expanded__text">This table predicts the number of infected people for Brazil.</p>
-				</div>
+                        </table>
             </div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
+            
+            <hr class="hr2">
+            <div class="expanded__inner" class="container">
+                <div class="expanded__content">
+					<h3 class="expanded__title">Fatality rate and infection rate by States in Brazil</h3>
+					<p class="expanded__text">This chart shows the fatality rate and infection rate by States in Brazil.</p>
+				</div>
 				<div class="expanded__media">
 					<img src="images/fatality_rate.png" class="expanded__image">
 				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Fatality rate and infection rate by States in Brazil</h2>
-					<p class="expanded__text">This chart shows the fatality rate and infection rate by States in Brazil.</p>
-				</div>
 			</div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="images/n20cases_TOP5.png" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Five States of Brazil with the bigger number of infections</h2>
-					<p class="expanded__text">This chart shows five States of Brazil with the bigger number of infections</p>
-				</div>
+		
+            <hr class="hr2">
+            <div class="expanded__inner" class="container">
+                    <div class="expanded__content">
+                        <h3 class="expanded__title">Five States of Brazil with the bigger number of infections</h3>
+                        <p class="expanded__text">This chart shows five States of Brazil with the bigger number of infections</p>
+                    </div>
+                    <div class="expanded__media">
+                        <img src="images/n20cases_TOP5.png" class="expanded__image">
+                    </div>
+            </div>
+
+            <hr class="hr2">
+            <div class="expanded__inner" class="container">
+                <div class="expanded__content">
+                    <h3 class="expanded__title">South America countries</h3>
+                    <p class="expanded__text">This chart compares the cases of infections in South America countries</p>
+                </div>
+                <div class="expanded__media">
+                    <img src="images/southAmerica_brazil.png" class="expanded__image">
+                </div>
 			</div>
-		</div>
-	</div>
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="images/n20cases_TOP5.png" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">South America countries</h2>
-					<p class="expanded__text">This chart compares the cases of infections in South America countries</p>
-				</div>
-			</div>
-		</div>
-	</div>
-    <div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__media">
-					<img src="images/n20cases_TOP5.png" class="expanded__image">
-				</div>
-				<div class="expanded__content">
-					<h2 class="expanded__title">Bordering countries of Brazil</h2>
-					<p class="expanded__text">This chart compares the cases of infections in bordering countries of Brazil</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</a>
+		
+            <hr class="hr2">
+            <div class="expanded__inner" class="container">
+                    <div class="expanded__content">
+                        <h3 class="expanded__title">Bordering countries of Brazil</h3>
+                        <p class="expanded__text">This chart compares the cases of infections in bordering countries of Brazil</p>
+                    </div>
+                    <div class="expanded__media">
+                        <img src="images/n20cases_TOP5.png" class="expanded__image">
+                    </div>
+            </div>
+        </div>
+    </a>
 	
 	<!-- References -->
 	
     <a name="references">
-	<div class="expanded landing__section">
-		<div class="container">
-			<div class="expanded__inner">
-				<div class="expanded__content">
-					<h2 class="expanded__title">References</h2>
-					<p class="expanded__text">
-                        <ul>
+        <div class="expanded landing__section">
+            <div class="container">
+                <div class="expanded__inner">
+                    <div class="expanded__content">
+                        <h2 class="expanded__title">References</h2>
+                        <hr class="hr1"></hr>
+                        <p class="expanded__text">
+                        <ul id="ref-list">
                             <li><a href="https://idmod.org/docs/malaria/model-sir.html#sir-without-vital-dynamics" target="_blank">The SIR model.</a></li>
                             <li><a href="https://covid19br.github.io/index.html" target="_blank">Observatório COVID-19 BR.</a></li>
                             <li><a href="https://cmmid.github.io/topics/covid19/" target="_blank">Covid-19 Repository from the Centre for Mathematical Modelling of Infectious Diseases (CMMID), London School of Hygiene and Tropical Medicine.</a></li>
@@ -254,20 +250,21 @@
                             <li><a href="https://covid19br.wcota.me/" target="_blank">Wesley Cota (UFV) website for monitoring confirmed cases in Brazil.</a></li>
                             <li><a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html" target="_blank">Python tool (SciPy).</a></li>
                         </ul>
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
 	
 	<!-- Contact -->
 	
-	<a name="contact">
+<a name="contact">
 	<div class="cta cta--reverse">
 		<div class="container">
 			<div class="cta__inner">
 				<h2 class="cta__title">Contact</h2>
+				<hr class="hr1"></hr>
 				<p class="cta__sub cta__sub--center">This is a volunteer-driven project made by people from different areas and backgrounds. If you would like to know better about us, here are some links:</p>
 				<ul id="list">
                     <li>
@@ -304,7 +301,7 @@
 			</div>
 		</div>
 	</div>
-	</a>
+</a>
 	
     <!-- Footer -->	
 
