@@ -48,7 +48,7 @@ SIR model is a simple mathematical model for epidemics. Epidemics happen when a 
 * * *
 
 This video is in Brazilian Portuguese and presents some clarifications about the coronavirus.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gs-HlvC5iJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gs-HlvC5iJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Getting Started
 ---------------
