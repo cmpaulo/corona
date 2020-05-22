@@ -151,11 +151,12 @@ Contact
 
 This is a volunteer-driven project made by people from different areas and backgrounds. If you would like to know better about us, here are some links:
 
-*   Claudio Paulo \[Creator and project leader\]
-*   Frederico Gustavo \[Contributor\]
-*   Aracele Torres \[Contibutor\]
-*   Pedro Venturott \[Contibutor\]
-*   Gustavo Reginato \[Contributor\]
+*   Claudio Paulo \[Creator and project leader\][Linkedin](LinkedIn: https://www.linkedin.com/in/claudio-machado-paulo-1866a2146), Twitter [@cmp0484](https://twitter.com/cmp0484)
+*   Frederico Gustavo \[Contributor\] LinkedIn: [LinkedIn](www.linkedin.com/in/fredericogustavo)
+*   Aracele Torres \[Contibutor\] LinkedIn: [LinkedIn](https://www.linkedin.com/in/aracele-lima-torres-b96353134), Twitter [@araceletorres](https://twitter.com/araceletorres/), Github: [Github](https://github.com/aracele/)
+*   Pedro Venturott \[Contibutor\]LinkedIn: [LinkedIn](https://www.linkedin.com/in/pedro-henrique-gomes-venturott-30a379120/)
+*   Gustavo Reginato \[Contributor\]LinkedIn: [LinkedIn](https://www.linkedin.com/in/gustavo-reginato/)
+
 
 
 
