@@ -765,7 +765,6 @@ select::-ms-expand {
 /* unvisited link */
 
 #git-link, #ref-list a:link {
-  color: #cd5c5c;
   text-decoration: none;
 }
 
@@ -777,6 +776,7 @@ select::-ms-expand {
 /* mouse over link */
 #git-link, #ref-list a:hover {
   text-decoration: underline;
+  color: #cd5c5c;
 }
 
 
