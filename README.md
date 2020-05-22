@@ -78,6 +78,7 @@ git clone https://github.com/cmpaulo/corona.git
 ## Charts
 
 Forecast of the number of infected for Brazil. <br/>
+<<<<<<< HEAD
 <img src="images/log_data_forecast_brazil.png" alt="Forecast"> <br/>
 
 |    | Date       |   PredictionNumberInfections |   dataNumber |
@@ -90,6 +91,14 @@ Forecast of the number of infected for Brazil. <br/>
 |  5 | 2020-05-23 |                       321342 |          nan |
 
 Fatality rate and infection rate by States in Brazil.<br/>
+=======
+<img src="log_data_forecast_brazil.png" alt="Forecast"> <br/>
+
+
+Lethality rate and infection rate by states in Brazil.<br/>
+
+<img src="txa_letalidade.png" alt="taxamortalidade"> <br/>
+>>>>>>> bb53a3d... new update images
 
 <img src="images/fatality_rate.png" alt="Fatality_rate"> <br/>
 
@@ -112,9 +121,15 @@ This model is also missing some elements, such as the creation of new susceptibl
 <!-- Brazil sub-notifications vx possible notifications about CoronaVirus <br/> -->
 SIR model by region of Brazil:<br/>
 
+<<<<<<< HEAD
 <!-- <img src="SIR_modelSP.png" alt="modelsirs/e"> <br/> -->
 
 <!-- <img src="SIR_modelPR.png" alt="modelsirs"> <br/> -->
+=======
+<img src="SIR_modelSP.png" alt="modelosirparaestados"> <br/>
+
+<img src="SIR_modelRS.png" alt="modelosirparaestados"> <br/>
+>>>>>>> bb53a3d... new update images
 
 
 <!-- LICENSE -->
