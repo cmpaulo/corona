@@ -20,6 +20,7 @@
 =======
 # routines #
 #############
+<<<<<<< HEAD
 .ipynb_checkpoints/
 .ipynb
 .py
@@ -27,6 +28,14 @@
 .txt
 .sh
 >>>>>>> 7e30cec... add a list to ignore
+=======
+*.ipynb_checkpoints/
+*.ipynb
+*.py
+*.csv
+*.txt
+*.sh
+>>>>>>> cd95ba6... add a list to ignore files
 
 # Compiled source #
 ###################
