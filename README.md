@@ -11,7 +11,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/cmpaulo/corona">
-    <img src="logo.png" alt="Logo" width="200" height="200">
+    <img src="images/logo.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">Coronavirus (COVID-19) in Brazil</h3>
