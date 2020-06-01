@@ -95,12 +95,12 @@ This table predicts the number of infected people for Brazil.
 
 |   	|    Date    	| Prediction 	| Final number 	|
 |:-:	|:----------:	|:----------:	|:------------:	|
-| 0 	| 2020-05-19 	|   255847   	|    254220    	|
+<!--| 0 	| 2020-05-19 	|   255847   	|    254220    	|
 | 1 	| 2020-05-20 	|   270500   	|       -      	|
 | 2 	| 2020-05-21 	|   285876   	|       -      	|
 | 3 	| 2020-05-22 	|   302011   	|       -      	|
 | 4 	| 2020-05-23 	|   318943   	|       -      	|
-| 5 	| 2020-05-24 	|   336711   	|       -      	|
+| 5 	| 2020-05-24 	|   336711   	|       -      	|-->
 
 * * *
 
@@ -132,7 +132,7 @@ This chart compares the cases of infections in South America countries
 
 This chart compares the cases of infections in bordering countries of Brazil
 
-![](images/n20cases_TOP5.png)
+![](images/border_brazil.png)
 
 References
 ----------
