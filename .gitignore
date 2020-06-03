@@ -16,6 +16,7 @@
 # excude this file
 !Corona19-Brazil_projeto.ipynb
 !Corona19-Brazil_projeto.py
+!data_explorer_ML.ipynb
 
 # Compiled source #
 ###################
@@ -44,6 +45,12 @@
 *.log
 *.sql
 *.sqlite
+
+# Directories #
+###############
+venv-linux/
+venv-windows/
+owid_profiles/
 
 # OS generated files #
 ######################
