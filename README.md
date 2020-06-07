@@ -5,9 +5,6 @@
 *** See the bottom of this document for the declaration of the reference variables
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
-# fatality_rate_southest.png
-# fatality_rate_south.png
-# Fatality_rate.png
 -->
 
 <!-- PROJECT LOGO -->
@@ -33,40 +30,45 @@
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-
-* [About the Project](#about-the-project)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Charts](#charts)
-* [License](#license)
-* [Contact](#contact)
-* [References](#references)
+*   [About the project](#about)
+*   [Getting started](#started)
+*   [Charts](#charts)
+*   [References](#references)
+*   [Contact](#contact)
 
 
+About the project
+-----------------
 
-<!-- ABOUT THE PROJECT -->
-## About the Project
+Observing the worldwide tendency to ignore some diseases that can become a pandemic, I have decided to give my contribution for understanding the COVID-19 pandemic in Southeast Brazil. This pandemic is demanding more knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.
 
-Observing the worldwide tendency to ignore some diseases that can become a pandemic, I have decided to give my contribution for understanding  the COVID-19 pandemic in Southeast Brazil. This pandemic is demanding more knowledge of its behavior for the prediction and estimation of cases from tables of data collected from the global health agencies. These routines are still very primary, but we can already observe some behavior that we can predict or estimate with models of evolution of the infection (I) of healthy individuals (S) that can kill (D) these or let these (R, E) live.
+SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for for the number of susceptible; "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals. This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.
 
-This is a shortcut to a video that is on the <a href="https://cmpaulo.github.io/corona/"> Corona Website  </a> from this repository. This video is in Brazilian Portuguese and presents some clarifications about the coronavirus. 
+### Lockdown in Brazil
+* * *
+
+This video is in Brazilian Portuguese and presents some clarifications about the coronavirus.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gs-HlvC5iJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<!-- GETTING STARTED -->
-## Getting Started
+Getting Started
+---------------
 
 This program has a database until March 24, 2020 for the number of confirmed cases for several countries. With the programs you can carry out an assessment of the lethality of COVID-19, and time/number evolution of infections.
 
 ### Prerequisites
 
 The list of things that you need to use and how to install them.
+
 * pip
 ```sh
 pip install pandas numpy scipy wget
 ```
 
+pip install pandas numpy scipy wget
+
 ### Installation
+
 
 1. Get a free API Key at [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
 2. Clone the repo
@@ -74,94 +76,88 @@ pip install pandas numpy scipy wget
 git clone https://github.com/cmpaulo/corona.git
 ```
 
-<!-- USAGE EXAMPLES -->
-## Charts
 
-Forecast of the number of infected for Brazil. <br/>
-<img src="images/log_data_forecast_brazil.png" alt="Forecast"> <br/>
-
-|    | Date       |   PredictionNumberInfections |   dataNumber |
-|---:|:-----------|-----------------------------:|-------------:|
-|  0 | 2020-05-18 |                       242726 |       241080 |
-|  1 | 2020-05-19 |                       256927 |          nan |
-|  2 | 2020-05-20 |                       271851 |          nan |
-|  3 | 2020-05-21 |                       287536 |          nan |
-|  4 | 2020-05-22 |                       304019 |          nan |
-|  5 | 2020-05-23 |                       321342 |          nan |
-
-Fatality rate and infection rate by States in Brazil.<br/>
-
-<img src="images/fatality_rate.png" alt="Fatality_rate"> <br/>
-
-Five States of Brazil with the bigger number of infections: <br/>
-<img src="images/n20cases_TOP5.png" alt="TOP5"> <br/>
-
-South America countries: <br/>
-
-<img src="images/southAmerica_brazil.png" alt="SA cases"> <br/>
-
-Bordering countries of Brazil: <br/>
-
-<img src="images/border_brazil.png" alt="Bordering cases"> <br/>
-
-ABOUT SIR MODEL <br/>
-
-SIR model is a simple mathematical model for epidemics. Epidemics happen when a disease spread very fast reaching a large number of people in a short period of time. It defines "S" for  for the number of susceptible; "I" or the number of infectious, and "R" for the number of recovered or deceased/immune individuals.
-
-This model is also missing some elements, such as the creation of new susceptible people by being born, and the removal of susceptible, infected, and recovered people who die.<br/>
-<!-- Brazil sub-notifications vx possible notifications about CoronaVirus <br/> -->
-SIR model by region of Brazil:<br/>
-
-<!-- <img src="SIR_modelSP.png" alt="modelsirs/e"> <br/> -->
-
-<!-- <img src="SIR_modelPR.png" alt="modelsirs"> <br/> -->
+Charts
+------
 
 
-<!-- LICENSE -->
-## License
+### Forecast of the number of infected for Brazil
 
-Distributed under the MIT License. See `LICENSE` for more information.
+This chart shows the number of infected people for Brazil.
 
-<!-- CONTACT - email@example.com --->
-## Contact
+![](images/log_data_forecast_brazil.png)
 
-Cláudio M. Paulo 
+* * *
 
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146)
-Twitter [@cmp0484](https://twitter.com/cmp0484)
-<!-- Lattes(CnPq): [Currículo Lattes](http://lattes.cnpq.br/4172070751691684) -->
+### Infection prediction table
 
-Frederico Gustavo
+This table predicts the number of infected people for Brazil.
 
-LinkedIn: [LinkedIn](www.linkedin.com/in/fredericogustavo)
+|   	|    Date    	| Prediction 	| Final number 	|
+|:-:	|:----------:	|:----------:	|:------------:	|
+<!--| 0 	| 2020-05-19 	|   255847   	|    254220    	|
+| 1 	| 2020-05-20 	|   270500   	|       -      	|
+| 2 	| 2020-05-21 	|   285876   	|       -      	|
+| 3 	| 2020-05-22 	|   302011   	|       -      	|
+| 4 	| 2020-05-23 	|   318943   	|       -      	|
+| 5 	| 2020-05-24 	|   336711   	|       -      	|-->
 
-Aracele Torres
+* * *
 
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/aracele-lima-torres-b96353134)
+### Fatality rate and infection rate by States in Brazil
 
-Gustavo Reginato
+This chart shows the fatality rate and infection rate by States in Brazil.
 
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/gustavo-reginato/)
+![](images/fatality_rate.png)
 
-Pedro Venturott
+* * *
 
-LinkedIn: [LinkedIn](https://www.linkedin.com/in/pedro-henrique-gomes-venturott-30a379120/)
+### Five States of Brazil with the bigger number of infections
 
-Corona Project: [https://github.com/cmpaulo/corona](https://github.com/cmpaulo/corona)
+This chart shows five States of Brazil with the bigger number of infections
+
+![](images/n20cases_TOP5.png)
+
+* * *
+
+### South America countries
+
+This chart compares the cases of infections in South America countries
+
+![](images/southAmerica_brazil.png)
+
+* * *
+
+### Bordering countries of Brazil
+
+This chart compares the cases of infections in bordering countries of Brazil
+
+![](images/border_brazil.png)
+
+References
+----------
 
 
-<!-- ACKNOWLEDGEMENTS -->
-<!-- REFERENCES -->
-## References
 
-* [The SIR model](https://idmod.org/docs/malaria/model-sir.html#sir-without-vital-dynamics)
-* [Observatório COVID-19 BR](https://covid19br.github.io/index.html)
-* [CMMID COVID repository](https://cmmid.github.io/topics/covid19) Centre for Mathematical Modelling of Infectious Diseases, Londo School of Hygiene and Tropical Medicine.
-* [Jonh Hopkins Coronavirus Resource Center](https://coronavirus.jhu.edu/map.html)
-* [confirmados de COVID-19 at Brasil](https://covid19br.wcota.me/)  Wesley Cota, Universidade de Viçosa.
-* [Python3 toll ](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html) 
+*   [The SIR model.](https://idmod.org/docs/malaria/model-sir.html#sir-without-vital-dynamics)
+*   [Observatório COVID-19 BR.](https://covid19br.github.io/index.html)
+*   [Covid-19 Repository from the Centre for Mathematical Modelling of Infectious Diseases (CMMID), London School of Hygiene and Tropical Medicine.](https://cmmid.github.io/topics/covid19/)
+*   [Jonh Hopkins Coronavirus Resource Center.](https://coronavirus.jhu.edu/map.html)
+*   [Wesley Cota (UFV) website for monitoring confirmed cases in Brazil.](https://covid19br.wcota.me/)
+*   [Python tool (SciPy).](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.curve_fit.html)
 
-# CORONA COVID19 BRAZIL
-MODELO Previsão corona19, covid19, covid 19,
-MODELO PREDIÇÃO CORONA VÍRUS, QUARENTENA, ESTADO DE SÃO PAULO, BRASIL
-MODELO SIR, MODELO SIRE,BRASIL 2019
+Contact
+-------
+
+
+This is a volunteer-driven project made by people from different areas and backgrounds. If you would like to know better about us, here are some links:
+
+*   Claudio Paulo \[Creator and project leader\] [Linkedin](https://www.linkedin.com/in/claudio-machado-paulo-1866a2146), Twitter: [@cmp0484](https://twitter.com/cmp0484)
+*   Frederico Gustavo \[Contributor\] [LinkedIn](www.linkedin.com/in/fredericogustavo)
+*   Aracele Torres \[Contibutor\] [LinkedIn](https://www.linkedin.com/in/aracele-lima-torres-b96353134), Twitter: [@araceletorres](https://twitter.com/araceletorres/), [Github](https://github.com/aracele/)
+*   Pedro Venturott \[Contibutor\] [LinkedIn](https://www.linkedin.com/in/pedro-henrique-gomes-venturott-30a379120/)
+*   Gustavo Reginato \[Contributor\] [LinkedIn](https://www.linkedin.com/in/gustavo-reginato/)
+
+
+
+
