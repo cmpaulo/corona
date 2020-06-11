@@ -157,7 +157,3 @@ This is a volunteer-driven project made by people from different areas and backg
 *   Aracele Torres \[Contibutor\] [LinkedIn](https://www.linkedin.com/in/aracele-lima-torres-b96353134), Twitter: [@araceletorres](https://twitter.com/araceletorres/), [Github](https://github.com/aracele/)
 *   Pedro Venturott \[Contibutor\] [LinkedIn](https://www.linkedin.com/in/pedro-henrique-gomes-venturott-30a379120/)
 *   Gustavo Reginato \[Contributor\] [LinkedIn](https://www.linkedin.com/in/gustavo-reginato/)
-
-
-
-
