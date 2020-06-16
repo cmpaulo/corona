@@ -108,7 +108,7 @@ select {
 }
 
 [type=button],
-[type=reset],
+[type=reset],f
 [type=submit],
 button {
 	-webkit-appearance: button
@@ -1288,7 +1288,7 @@ tr:nth-child(even){background-color: #f2f2f2;}
 
 .expanded__image {
 	max-width: 100%;
-    width: 900px;
+    width: 1000px;
     height: 640px;
 	padding: 1pt 0;
 }
