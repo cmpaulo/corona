@@ -104,17 +104,27 @@ This table predicts the number of infected people for Brazil.
 
 * * *
 
-### Fatality rate and infection rate by States in Brazil
+### Fatality rate by States in Brazil
 
-This chart shows the fatality rate and infection rate by States in Brazil.
+This chart shows the fatality rate by States in Brazil.
 
 ![](images/fatality_rate.png)
 
 * * *
 
+### Infection rate by States in Brazil
+
+This chart shows the infection rate by States in Brazil.
+
+![](images/spread_rate.png)
+
+* * *
+
 ### Five States of Brazil with the bigger number of infections
 
-This chart shows five States of Brazil with the bigger number of infections
+This chart shows five States of Brazil with the bigger number of infections.
+
+Number of infections by 100 mil of population
 
 ![](images/n20cases_TOP5.png)
 
@@ -136,7 +146,6 @@ This chart compares the cases of infections in bordering countries of Brazil
 
 References
 ----------
-
 
 
 *   [The SIR model.](https://idmod.org/docs/malaria/model-sir.html#sir-without-vital-dynamics)
