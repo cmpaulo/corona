@@ -253,3 +253,39 @@ plt.show()
 # fig.savefig("images/n20cases_TOP5.png", dpi=350)
 # plt.close()
 
+'''
+Criação do novo dataset 'dataWBR.csv' com as colunas 'fatality' e 'active'
+Autor: Frederico Gustavo Magalhães
+Data: 09/06/2020
+Variáveis:
+-- data -> "https://covid.ourworldindata.org/data/ecdc/full_data.csv"
+-- dataJHU -> "https://s3-us-west-1.amazonaws.com/starschema.covid/JHU_COVID-19.csv"
+-- allworld -> variável com os países que serão criados o novo dataset
+-- df_temp -> variável que representa o novo dataset utilizando os dados do dataframe data
+-- df_temp2 -> variável que representa o novo dataset utilizando os dados do dataframe dataJHU
+'''
+
+# Carrega o dataset para criação das colunas 'fatality' e 'active'
+dataJHU = pd.read_csv("https://s3-us-west-1.amazonaws.com/starschema.covid/JHU_COVID-19.csv")
+
+# Altera o padrão da coluna 'date' para datetime
+data['date'] = pd.to_datetime(data['date'])
+
+allworld = ['Argentina', 'Bolivia', 'Brazil', 'Chile', 'Colombia', 'Ecuador', 'Falkland Islands',
+            'French Guiana', 'Guyana', 'Paraguay', 'Peru', 'Russia', 'Spain', 'Suriname', 'United Kingdom',
+            'United States', 'Uruguay', 'Venezuela']
+
+allworld = sorted(borderBR)
+
+# Cria o novo dataset
+for estado in allworld:
+  df_temp = data[data['location'].isin(allworld)]
+
+# Preenche o total de fatalidades na coluna 'fatality'
+df_temp['fatality'] = df_temp['total_deaths'] / df_temp['total_cases']
+
+# Preenche o total de ativos na coluna 'active'
+df_temp = df_temp.assign(active=df_temp['total_cases'] - df_temp['total_deaths'] - df_temp['new_cases'])
+
+# Exporta o arquivo para o formato csv
+df_temp.to_csv('./dataWBR.csv')
