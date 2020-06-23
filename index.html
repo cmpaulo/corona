@@ -134,56 +134,9 @@
     
             <hr class="hr2">
             <div class="expanded__inner" class="container">
-                    <h3 class="expanded__title">Infection prediction table</h3>
-					<p class="expanded__text">This table predicts the number of infected people for Brazil.</p>
-                    <table class="data__frame">
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Date</th>
-                            <th>Prediction</th>
-                            <th>Final number</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>0</th>
-                            <td>2020-05-19</td>
-                            <td>255847</td>
-                            <td>254220</td>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <td>2020-05-20</td>
-                            <td>270500</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <td>2020-05-21</td>
-                            <td>285876</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <td>2020-05-22</td>
-                            <td>302011</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>4</th>
-                            <td>2020-05-23</td>
-                            <td>318943</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <th>5</th>
-                            <td>2020-05-24</td>
-                            <td>336711</td>
-                            <td>-</td>
-                            </tr>
-                        </tbody>
-                        </table>
+              <h3 class="expanded__title">Infection prediction table</h3>
+                <p class="expanded__text">This table predicts the number of infected people for Brazil.</p>
+                  <div id='table-container'></div>
             </div>
             
             <hr class="hr2">
@@ -324,9 +277,15 @@
 	</div>
 	
 <script src='js/app.min.js'></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.csv.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+<script type="text/javascript" src="js/csv_to_html_table.js"></script>
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98726453-3"></script>
-<script>
+<script type="text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -340,6 +299,23 @@
 	    'transport_type': 'beacon'
 	  });
 	};
+  function format_link(link){
+    if (link)
+      return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+    else
+      return "";
+    }
+  CsvToHtmlTable.init({
+    csv_path: 'prediction_br.csv',
+    // csv_path: 'http://localhost:8000/prediction_br.csv',
+    element: 'table-container', 
+    allow_download: true,
+    csv_options: {separator: ','},
+    // csv_options: {separator: ',', delimiter: '"'},
+    datatables_options: {"paging": false},
+    custom_formatting: [[4, format_link]]
+    });
+
 </script>
 
 </body>
