@@ -6,6 +6,7 @@
 *.docx
 *.csv
 *.txt
+!prediction_br.csv
 
 # routines #
 #############
