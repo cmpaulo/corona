@@ -115,7 +115,7 @@ This chart shows the fatality rate by States in Brazil.
 
 This chart shows the infection rate by States in Brazil.
 
-![](images/spread_rate.png)
+![](images/spreadSpeedRate.png)
 
 * * *
 
