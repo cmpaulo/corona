@@ -6,6 +6,7 @@
 *.docx
 *.csv
 *.txt
+!requirements.txt
 
 # routines #
 #############
@@ -17,6 +18,7 @@
 !Corona19-Brazil_projeto.ipynb
 !Corona19-Brazil_projeto.py
 !data_explorer_ML.ipynb
+!owid_covid_data_June-14-2020.csv
 
 # Compiled source #
 ###################
