@@ -200,7 +200,7 @@ html {
 :after,
 :before {
 	-webkit-box-sizing: inherit;
-	box-sizing: inherit
+	box-sizing: inherit;
 }
 
 .invisible {
@@ -901,7 +901,6 @@ select::-ms-expand {
 	color: #fff
 }
 
-
 /*! responsive-nav.js 1.0.39 by @viljamis */
 
 .nav__mobile ul {
@@ -1258,7 +1257,18 @@ tr:nth-child(even){background-color: #f2f2f2;}
 	-webkit-box-ordinal-group: 3;
 	-ms-flex-order: 2;
 	order: 2;
-    margin: auto
+    /*! margin: auto; */
+}
+
+@media only screen and (max-device-width: 740px) {
+	 .expanded__content {
+		 padding: 0 14pt;
+		 width: 100%;
+		 -ms-flex-negative: 0;
+		flex-shrink: 0;
+		-webkit-box-ordinal-group: unset;
+		-ms-flex-order: unset;
+		 order: unset}
 }
 
 @media (min-width:992px) {
@@ -1298,6 +1308,7 @@ tr:nth-child(even){background-color: #f2f2f2;}
 	}
 }
 
+
 .expanded__title {
 	text-align: center;
 }
@@ -1306,7 +1317,6 @@ tr:nth-child(even){background-color: #f2f2f2;}
 	max-width: 60ch
 }
 
-
 .command {
     background-color: #f2f2f2;
     padding-left: 15px;
@@ -1314,6 +1324,18 @@ tr:nth-child(even){background-color: #f2f2f2;}
     width: 370px;
     text-align: center;
     margin-left: 25px;
+}
+
+@media (min-width:992px) {
+	.command {
+		max-width: 100%
+	}
+}
+
+@media only screen and (max-device-width: 740px) {
+    .command {
+		max-width: 100%;
+	}
 }
 
 .cta {
@@ -1352,11 +1374,15 @@ tr:nth-child(even){background-color: #f2f2f2;}
 }
 
 #list {
-	text-align: left;
-    padding-left: 310px;
-    
+	text-align: center;
+    list-style-type: none    
 }
 
+@media only screen and (max-device-width: 740px) {
+    cta__inner {
+    text-align: center;
+    list-style-type: none}
+}
 
 .btn-scl {
   color: white;
