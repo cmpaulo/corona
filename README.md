@@ -92,7 +92,7 @@ This chart shows the number of infected people for Brazil.
 ### Infection prediction table
 
 This table predicts the number of infected people for Brazil.
-
+<!--prediction-->
 |    | Date       |   Prediction |
 |---:|:-----------|-------------:|
 |  0 | 2020-08-18 |      3396613 |
