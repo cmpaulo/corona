@@ -100,6 +100,7 @@ This table predicts the number of infected people for Brazil.
 |  2 | 2020-09-14 |      4380581 |
 |  3 | 2020-09-15 |      4417431 |
 |  4 | 2020-09-16 |      4454281 |
+|  4 | 2020-09-16 |      4454281 |
 
 
 * * *
