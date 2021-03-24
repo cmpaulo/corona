@@ -29,7 +29,7 @@ plt.style.use('seaborn')
 # url ="https://covid.ourworldindata.org/data/ecdc/full_data.csv"
 # output_directory = "."
 # filename = wget.download(url, out=output_directory)
-printimage = 'off'
+printimage = 'off' # on ou off
 
 # read a csv to DataFrame with pandas
 data = pd.read_csv("https://covid.ourworldindata.org/data/ecdc/full_data.csv")
@@ -88,15 +88,15 @@ ierro = func(prbrxdata, *poptbr - perrbr)
 hojebr = func(len(xdata)+1, *poptbr)
 
 # Prediction table to Br
-new = []
-for i in dateCase.to_pydatetime():
-    new.append(i.strftime(format="%Y-%m-%d"))
-tocsv = pd.DataFrame()
-tocsv["Date"] = np.array(new)
-tocsv["Prediction"] = prbrdata.astype('int')
-tocsv.to_csv('./prediction_br.csv',index=False)
+# new = []
+# for i in dateCase.to_pydatetime():
+#     new.append(i.strftime(format="%Y-%m-%d"))
+# tocsv = pd.DataFrame()
+# tocsv["Date"] = np.array(new)
+# tocsv["Prediction"] = prbrdata.astype('int')
+# tocsv.to_csv('./prediction_br.csv',index=False)
 
-print(tocsv.to_markdown())
+# print(tocsv.to_markdown())
 
 # Graphic Brazil
 
