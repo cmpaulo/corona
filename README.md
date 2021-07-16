@@ -91,17 +91,6 @@ This chart shows the number of infected people for Brazil.
 
 ### Infection prediction table
 
-This table predicts the number of infected people for Brazil.
-<!--prediction-->
-|    | Date       |   Prediction |
-|---:|:-----------|-------------:|
-|  0 | 2020-10-14 |      5147952 |
-|  1 | 2020-10-15 |      5173946 |
-|  2 | 2020-10-16 |      5199940 |
-|  3 | 2020-10-17 |      5225934 |
-|  4 | 2020-10-18 |      5251928 |
-
-
 
 * * *
 
@@ -113,13 +102,6 @@ This chart shows the fatality rate by States in Brazil.
 
 * * *
 
-### Infection rate by States in Brazil
-
-This chart shows the infection rate by States in Brazil.
-
-![](images/spreadSpeedRate.png)
-
-* * *
 
 ### Five States of Brazil with the bigger number of infections
 
@@ -166,4 +148,3 @@ This is a volunteer-driven project made by people from different areas and backg
 *   Frederico Gustavo \[Contributor\] [LinkedIn](www.linkedin.com/in/fredericogustavo)
 *   Aracele Torres \[Contibutor\] [LinkedIn](https://www.linkedin.com/in/aracele-lima-torres-b96353134), Twitter: [@araceletorres](https://twitter.com/araceletorres/), [Github](https://github.com/aracele/)
 *   Pedro Venturott \[Contibutor\] [LinkedIn](https://www.linkedin.com/in/pedro-henrique-gomes-venturott-30a379120/)
-*   Gustavo Reginato \[Contributor\] [LinkedIn](https://www.linkedin.com/in/gustavo-reginato/)

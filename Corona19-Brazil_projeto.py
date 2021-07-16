@@ -215,7 +215,7 @@ for ii in TOP5:
         lf = p.totalCases_per_100k_inhabitants.index[p.totalCases_per_100k_inhabitants.argmax()].date()
         # ax.text(lf+timedelta(days=2),p.totalCases_per_100k_inhabitants.max(), ii)
 ax.text(pd.to_datetime('2020-06-01'), 1, 'update on ' + str(today))
-# ax.set_yscale('log')
+ax.set_yscale('log')
 ax.set_title("5 States of Brazil")
 ax.set_ylabel("Number of Infections / 100mil hab")
 ax.set_xlim(pd.to_datetime('2020-03-13').date(), lf+timedelta(days=15))
