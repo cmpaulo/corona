@@ -2,11 +2,6 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import timedelta, datetime
-# importa a biblioteca plotly.graph_objs para criação do gráfico interativo
-import plotly.graph_objs as go
-
-# import wget
-# import os
 
 plt.style.use('seaborn')
 
@@ -14,23 +9,22 @@ plt.style.use('seaborn')
 # url ="https://s3-us-west-1.amazonaws.com/starschema.covid/JHU_COVID-19.csv"
 # url ="https://covid.ourworldindata.org/data/ecdc/full_data.csv"
 # output_directory = "."
-printimage = 'off' # on ou off
+printimage = 'on' # on ou off
 
 # read a csv to DataFrame with pandas
-# data = pd.read_csv("https://covid.ourworldindata.org/data/ecdc/full_data.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/jhu/full_data.csv")
 
 # data = pd.read_csv('/home/claudio/Documents/profissao_DS/projetos/corona/JHU_COVID-19.csv')
-data = pd.read_csv('/home/claudio/Documents/profissao_DS/projetos/corona/full_data.csv')
+# data = pd.read_csv('/home/claudio/Documents/profissao_DS/projetos/corona/full_data.csv')
 
 data.index = pd.to_datetime(data.date)
 ## sel data form Brazil
 ctry = data[data["location"] == 'Brazil']
 tested = ctry.copy()
 dateCase = []
-
-# do fiting
-# ydata = tested.last("5W").resample('1W').mean().total_cases.values
-ydata = tested.last("5W").total_cases.values
+# do fiting3
+ydata = tested.last("60W").resample('1W').mean().total_cases.values
+# ydata = tested.last("3W").total_cases.values
 xdata = np.arange(len(ydata))
 ndate = tested.last("1D").index[0]
 
@@ -56,28 +50,26 @@ ierro = func(prbrxdata, *poptbr - perrbr)
 hojebr = func(len(xdata)+1, *poptbr)
 
 # Prediction table to Br
-# new = []
-# for i in dateCase.to_pydatetime():
-#     new.append(i.strftime(format="%Y-%m-%d"))
-# tocsv = pd.DataFrame()
-# tocsv["Date"] = np.array(new)
-# tocsv["Prediction"] = prbrdata.astype('int')
-# tocsv.to_csv('./prediction_br.csv',index=False)
-
-# print(tocsv.to_markdown())
+new = []
+for i in dateCase.to_pydatetime():
+    new.append(i.strftime(format="%Y-%m-%d"))
+tocsv = pd.DataFrame()
+tocsv["Date"] = np.array(new)
+tocsv["Prediction"] = prbrdata.astype('int')
+tocsv.to_csv('./prediction_br.csv',index=False)
 
 # Graphic Brazil
 fig = plt.figure(figsize=[10, 6])
 ax2 = plt.subplot()
 
 ax2.plot(dateCase[-len(prbrdata):], prbrdata, "b*-", label="5-day Forecast")
-ax2.plot(dateCase[-len(prbrdata):], ierro, 'k--', lw=.8)
-ax2.plot(dateCase[-len(prbrdata):], serro, 'k--', lw=.8)
+# ax2.plot(dateCase[-len(prbrdata):], ierro, 'k--', lw=.8)
+# ax2.plot(dateCase[-len(prbrdata):], serro, 'k--', lw=.8)
 ax2.plot(tested.index, tested["total_cases"], "k*--", label="Confirmed Brazil")
 
 
 ax2.set_title("COVID19 - Brazil data updated "+str(tested["date"][tested.index[-1]]))
-ax2.text(pd.to_datetime('2020-05-20'), 3, 'update on ' + str(datetime.now().date()))
+ax2.text(pd.to_datetime('2021-05-20'), 30, 'update on ' + str(datetime.now().date()))
 ax2.set_xlabel("Date")
 ax2.set_ylabel("Number of Infections")
 ax2.set_xlim(pd.to_datetime("2020-03-01").date(), datetime.now().date()+timedelta(days=5))
@@ -87,7 +79,6 @@ ax2.legend(loc="center right")
 ax2.grid('both','both')
 plt.show()
 fig.savefig("./images/log_data_forecast_brazil.png", dpi=350)
-
 
 #  Countreis of South America
 ############################SA##############
